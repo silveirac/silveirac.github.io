@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', Helvetica, Arial, sans-serif;
+}
+
+.bar-discount {
+    width: 1024px;    
+    height: 38px;
+    background-color: rgba(28, 209, 176, 1);
+    
+}
+
+.bar-discount p {
+    padding: 10px;
+    font-size: 15px; 
+}
+
+header {
+    width: 1024px;    
+    height: 103px;
+    background-color: rgba(0, 102, 159, 1);
+    box-shadow: 0px 10px 7px rgba(0, 0, 0, 0.25);
+}
+
+header h1 {
+    padding: 27px;
+    font-size: 40px;
+}
+
+main {
+    width: 1024px;
+}
+.cards {
+    margin: 85px 95px 150px 95px;
+    height: 597px;
+    width: 834px;
+    position: relative;
+}
+
+.cards .card1 {
+    position: absolute;
+    left: 0;
+    display: inline-block;
+    height: 597px;
+    width: 374px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 16px 16px 0 0;
+}
+
+.cards .card2 {
+    position: absolute;
+    right: 0;
+    display: inline-block;
+    height: 597px;
+    width: 374px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 16px 16px 0 0;
+}
+
+.scene {
+    display: block;
+    height: 218px;
+    border-radius: 16px 16px 0 0;    
+}
+
+.scene-img {
+    display: block;
+    height: 218px;
+    width: 100%;    
+    border-radius: 16px 16px 0 0;
+}
+
+.card-content {
+    height: 379px;
+    background-color: rgba(243, 243, 243, 1);
+    position: relative;
+    text-align: center;
+}
+
+.profile-pic {
+    height: 135px;
+    width: 135px;
+    border-radius: 100%;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-top: -67px;
+}
+.card-content h2 {
+    margin-top: 23px;
+}
+
+.card-content p {
+    margin-top: 30px;
+    margin: 36px;
+}
+
+.card-content button {
+    position: absolute;
+    left: 114px;
+    bottom: 30px;
+    height: 55px;
+    width: 146px;
+    border: none;
+    background-color: rgba(0, 102, 159, 1);
+    color: rgba(255, 255, 255, 1);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+
+.card-content button:hover {
+    background-color: rgba(0, 102, 159, 0.7);
+}
+
+footer {
+    top: 972px;
+    width: 1024px;    
+    height: 51px;
+    background-color: #00669F;
+}
+
+footer p { 
+    padding: 16px 10px;
+    font-size: 16px;
+    line-height: 19px;
+    color: rgba(255, 255, 255, 1);
+}
