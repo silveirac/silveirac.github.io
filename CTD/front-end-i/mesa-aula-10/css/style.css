@@ -6,8 +6,14 @@
     font-family: 'Roboto', Helvetica, Arial, sans-serif;
 }
 
+
+header { 
+    position: sticky;
+    z-index: 1;
+    top: 0;
+}
+
 .bar-discount {
-    width: 1024px;    
     height: 38px;
     background-color: rgba(28, 209, 176, 1);
     
@@ -18,23 +24,20 @@
     font-size: 15px; 
 }
 
-header {
-    width: 1024px;    
-    height: 103px;
+header .header-container {
+    height: 101px;
     background-color: rgba(0, 102, 159, 1);
     box-shadow: 0px 10px 7px rgba(0, 0, 0, 0.25);
+
 }
 
-header h1 {
-    padding: 27px;
+header .header-container h1 {
+    padding: 27p    x;
     font-size: 40px;
 }
 
-main {
-    width: 1024px;
-}
 .cards {
-    margin: 85px 95px 150px 95px;
+    margin: 85px auto;
     height: 597px;
     width: 834px;
     position: relative;
@@ -121,8 +124,7 @@ main {
 }
 
 footer {
-    top: 972px;
-    width: 1024px;    
+    top: 972px;  
     height: 51px;
     background-color: #00669F;
 }
