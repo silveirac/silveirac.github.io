@@ -73,6 +73,11 @@ main {
     border-radius: 16px 16px 0 0;
 }
 
+.like-icon {
+    position: absolute;
+    margin: 18px 24px;
+}
+
 .card-content {
     height: 379px;
     background-color: rgba(243, 243, 243, 1);
