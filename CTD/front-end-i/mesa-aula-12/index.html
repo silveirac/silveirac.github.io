@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Front-end I | Mesa Aula 12</title>
+    <link href="./css/style.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <div class="promo-bar">
+        <p class="promo-bar-text">Grandes ofertas em comedouros</p>
+        <nav class="promo-bar-menu">
+          <a class="promo-bar-menu-item">Português </a>
+          <a class="promo-bar-menu-item">BRL $</a>
+        </nav>
+      </div>
+      <div class="header-container">
+        <img class="header-logo" src="./img/logo.svg">
+        <nav class="header-nav-menu">
+          <a class="nav-menu-item" href="#">
+            <img class="pawprint" src="./img/pawprint.svg">
+            Categorias            
+          </a>
+          <a class="nav-menu-item" href="#">
+            <img class="pawprint" src="./img/pawprint.svg">
+            Pets            
+          </a>
+          <a class="nav-menu-item" href="#">
+            <img class="pawprint" src="./img/pawprint.svg">
+            Quem somos            
+          </a>
+          <a class="nav-menu-item" href="#">
+            <img class="pawprint" src="./img/pawprint.svg">
+            Contato            
+          </a>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="banner-container">
+        <img class="banner-img" src="./img/banner.png" alt="#">
+        <div class="banner-cta">
+          <span><p>É um prazer te ter aqui!</p></span>
+          <p>Comedouros com desconto!</p>
+          <a href="#">COMEDOUROS</a>
+        </div>
+      </div>
+      <section class="content-container">
+        <div class="content-header">
+          <img src="./img/pawprint-color.svg">
+          <h1>Produtos Destacados</h1>
+          <span>
+            <a href="#">Comedouros</a>
+            <p>-</p>
+            <a href="#">Acessórios</a>
+            <p>-</p>
+            <a href="#">Comida</a>
+          </span>
+        </div>
+        <div class="content-product">
+          <div class="content-product-card">
+            <a href="#"><img src="./img/product1.png" alt="foto petisco churrasquito"></a>
+            <p class="product-name">Petisco Churrasquito</p>
+            <p class="product-price">$150,00</p>
+          </div>        
+          <div class="content-product-card">
+            <a href="#"><img src="./img/product2.png" alt="foto comedouro"></a>
+            <p class="product-name">Comedouro para Cachorro</p>
+            <p class="product-price">$250,00</p>
+          </div>        
+          <div class="content-product-card">
+            <a href="#"><img src="./img/product3.png" alt="foto petisco ossinho"></a>
+            <p class="product-name">Petisco ossinho</p>
+            <p class="product-price">$650,00</p>
+          </div>        
+        </div>
+      </section>
+      <form action="#">
+        <fieldset class="contact-container">
+          <h2>Contato</h2>
+          <div class="contact-container-inputs">
+            <input type="text" placeholder="Nome e Sobrenome">
+            <input type="email" placeholder="Email">
+            <input type="tel" name="telNo" id="telNo" placeholder="Telefone">
+          </div>
+          <div class="contact-container-buttons">
+            <button class="reset-button" type="reset">Limpar</button>
+            <button class="submit-button" type="submit">Enviar</button>
+          </div>
+        </fieldset>
+      </form>
+      <div class="newsletter-bar">
+        <div class="newsletter-bar-text">
+          <img src="./img/letter.svg">
+          <p>Inscreva-se para mais novidades</p>
+        </div>
+        <form action="#">
+          <input type="email" placeholder="Informe seu e-mail">
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
+    </main>
+    <footer>
+      <div class="footer-container">
+        <div class="footer-container-info">
+          <div>
+            <img src="./img/location.svg" alt="localização">
+            <span>
+              <h2>Localização</h2>
+              <a  target="_blank" href="https://www.google.com/maps/place/Brazil/@-13.6628611,-69.6457941,4z/data=!3m1!4b1!4m5!3m4!1s0x9c59c7ebcc28cf:0x295a1506f2293e63!8m2!3d-14.235004!4d-51.92528">Brasil</a>
+            </span>
+          </div>
+          <div>
+            <img src="./img/telephone.svg" alt="telefone">
+            <span>
+              <h2>Telefone</h2>
+              <a href="callto:+55 11 9-9999-9999">+55 11 9-9999-9999</a>
+            </span>
+          </div>
+          <div>
+            <img src="./img/email.svg" alt="e-mail">
+            <span>
+              <h2>E-mail</h2>
+              <a href="mailto:contato@frontcatdog.com.br">contato@frontcatdog.com.br</a>
+            </span>
+          </div>
+
+        </div>
+        <a href="#">
+          <img src="./img/footer-logo.svg" alt="logo cat & dog">
+        </a>
+      </div>
+      <div class="footer-rights">
+        <p>Todos os direitos reservados à Front-end I</p>
+      </div>
+    </footer>
+  </body>
+</html>
