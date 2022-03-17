@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', Helvetica, Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.bar-discount { 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2rem;   
+    background-color: rgba(209, 137, 28, 1);
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 4rem;
+    background-color: rgba(0, 102, 159, 1);
+    font-size: 1rem;
+    box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.25);
+}
+
+.header-container a {
+    text-decoration: none;
+    color: white;
+}
+
+/* header for 1024px+ wide */ 
+@media (min-width: 1024px) {
+    .bar-discount {
+        justify-content: flex-start;
+        padding: 1em;
+    }
+    .header-container {
+        justify-content: flex-start;
+        padding: 1em;
+    }
+}
+
+.cards-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 8rem 1rem 2rem;
+    row-gap: 2rem;
+    column-gap: 2rem;
+}
+
+.card { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px 10px 0px 0px;
+    height: 550px;
+    width: 330px;
+    box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.25);
+}
+
+.card-scene {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.scene-img {
+    width: 100%;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.like-icon {
+    display: flex;
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+}
+
+.card-content {
+    background-color: rgba(243, 243, 243, 1);
+    height: 100%;
+    position: relative;
+}
+
+.card-content span {
+    margin: 1rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-pic {
+    position: absolute;
+    top: -3.5rem;
+    border-radius: 100%;
+    width: 7rem;
+    box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.25);
+}
+
+.card-content span h2 {
+    margin-top: 4.5rem;
+}
+
+.card-content span p {
+    margin-top: 1em;
+}
+
+.card-content span a {
+    text-align: center;
+    position: absolute;
+    padding: 1.6rem;
+    bottom: 2em;
+    height: 20%;
+    width: 70%;
+    background-color: rgba(0, 102, 159, 1);
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 4rem;
+    background-color: rgba(0, 102, 159, 1);
+    color: white;
+}
+
+@media (min-width: 1024px) {
+    .cards-container {
+        justify-content: flex-start;
+    }
+}

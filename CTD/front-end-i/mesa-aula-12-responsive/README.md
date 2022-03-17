@@ -1,0 +1,1 @@
+Elaboração de site estático responsivo utilizando-se conceitos de HTML, CSS como formulários, flexbox e media querries.
