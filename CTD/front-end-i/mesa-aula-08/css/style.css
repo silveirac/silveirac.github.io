@@ -1,0 +1,66 @@
+/* Por Cauê Silveira (CTD Part Time - Turma 3) */
+
+/* Importação de Fontes */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+body {
+    background-color: #000000;
+    margin: 0px;
+    font-family: 'Roboto', Helvetica, Arial, sans-serif;
+}   
+
+header {
+    background-color: #000000;
+    color: #ffffff;
+    padding-left: 20px;
+}
+
+main {
+    color: #ffffff;
+}   
+
+.media-picture {
+    background-image: url(../img/pianista.jpg);
+    background-size: cover;
+    height: 500px;
+}
+
+.review-score {
+
+    color: #000000;
+    font-weight: bolder;
+    text-shadow: 1px 1px 1px 0.5;
+    background-color: yellow;
+    padding: 10px 10px;
+    border-radius: 5px;
+    border-color: rgba(0,0,0,0);
+    box-shadow: 2px 2px 2px 0.2;
+    margin: 10px;
+
+}
+
+h1 {
+    color: white;
+    font-family: 'Roboto', Helvetica, Arial, sans-serif;
+}
+
+h2 {
+    color: #6272ff;
+    padding: 0px 20px 0px 20px; 
+}
+
+main p {
+    padding: 0px 20px 0px 20px; 
+}
+
+footer {
+    color: #808080;
+    text-align: center;
+    font-size: 16px;
+    line-height: 4px;
+    padding-top: 20px;
+    
+}
+
+
+/* background-image: url(../img/pianista.jpg) */
