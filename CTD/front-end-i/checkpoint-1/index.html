@@ -1,0 +1,99 @@
+<!-- Front-end I | Checkpoint 1 | Cauê Silveira -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Front-end 1 - Checkpoint 1</title>
+    <link rel="stylesheet" href="./css/style.css" type="text/css">
+    <script type="text/javascript" src="./js/script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+<body>
+    <header>
+        <div id="mobile-nav-menu-container">
+            <nav class="mobile-nav-menu">
+                <ul>
+                    <li>
+                        <a href="#">História da cidade</a>
+                    </li>
+                    <li>
+                        <a href="#">Estatísticas</a>
+                    </li>
+                    <li>
+                        <a href="#">Pontos turísticos</a>
+                    </li>
+                    <li>
+                        <a href="#">Campinas e TI</a>
+                    </li>
+                    <li>
+                        <a href="#">Links úteis</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="header-container">
+            <a href="https://www.saopaulo.sp.gov.br/">
+                <img src="./img/tag-sp.png" alt="" id="tag-sp">
+            </a>
+            <a class="brasao-campinas" href="#">
+                <img class="brasao-campinas" src="./img/brasao-campinas.png" alt="brasão da cidade de Campinas">
+            </a>
+            <a class="hamburger-menu" href="javascript:void(0)" onclick="togleMobileMenu('mobile-nav-menu-container')">
+                <img class="hamburger-menu" src="./img/hamburgermenu.svg" alt="">
+            </a>
+        </div>
+    </header>
+    <main>
+        <div class="content-phrase-container">
+            <div class="content-phrase-slogan">
+                <h2 class="slogan-campinas1">trabalho</h2>
+                <h2 class="slogan-campinas2">liberdade</h2>
+                <h2 class="slogan-campinas3">prosperidade</h2>
+            </div>
+            <div class="content-phrase-title">
+                <h1 class="city-title">CAMPINAS</h1>
+            </div>
+        </div>
+        <div class="sliding-container-master">
+            <div class="sliding-container">
+                <div class="sliding-content" id="history-content-id">
+                    <p class="content-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus accusamus similique quasi cupiditate earum autem animi ratione libero, incidunt eligendi qui beatae provident dolorum quae id sequi. Maiores dignissimos voluptatum adipisci possimus fugiat animi aut autem dolorum. Molestias odio reiciendis veniam adipisci. Laudantium quaerat ipsa, molestias voluptatem quasi quam itaque?</p>
+                </div>
+                <a href="javascript:void(0)" class="sliding-tag" id="history-tag" onclick="togleSlidingContent('history-content-id', 'history-img-id')"><p>HISTÓRIA</p></a>
+                <div class="sliding-img" id="history-img-id">
+                </div>
+            </div>
+            <div class="sliding-container">
+                <div class="sliding-content" id="statistics-content-id">
+                    <p class="content-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus accusamus similique quasi cupiditate earum autem animi ratione libero, incidunt eligendi qui beatae provident dolorum quae id sequi. Maiores dignissimos voluptatum adipisci possimus fugiat animi aut autem dolorum. Molestias odio reiciendis veniam adipisci. Laudantium quaerat ipsa, molestias voluptatem quasi quam itaque?</p>
+                </div>
+                <a href="javascript:void(0)" class="sliding-tag" id="statistics-tag" onclick="togleSlidingContent('statistics-content-id', 'statistics-img-id')"><p>ESTATÍSTICAS</p></a>
+                <div class="sliding-img" id="statistics-img-id">
+                </div>
+            </div>
+            <div class="sliding-container">
+                <div class="sliding-content" id="touristic-content-id">
+                    <p class="content-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus accusamus similique quasi cupiditate earum autem animi ratione libero, incidunt eligendi qui beatae provident dolorum quae id sequi. Maiores dignissimos voluptatum adipisci possimus fugiat animi aut autem dolorum. Molestias odio reiciendis veniam adipisci. Laudantium quaerat ipsa, molestias voluptatem quasi quam itaque?</p>
+                </div>
+                <a href="javascript:void(0)" class="sliding-tag" id="touristic-tag" onclick="togleSlidingContent('touristic-content-id', 'touristic-img-id')"><p>TURISMO</p></a>
+                <div class="sliding-img" id="touristic-img-id">
+                </div>
+            </div>
+            <div class="sliding-container">
+                <div class="sliding-content" id="curiosities-content-id">
+                    <p class="content-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus accusamus similique quasi cupiditate earum autem animi ratione libero, incidunt eligendi qui beatae provident dolorum quae id sequi. Maiores dignissimos voluptatum adipisci possimus fugiat animi aut autem dolorum. Molestias odio reiciendis veniam adipisci. Laudantium quaerat ipsa, molestias voluptatem quasi quam itaque?</p>
+                </div>
+                <a href="javascript:void(0)" class="sliding-tag" id="curiosities-tag" onclick="togleSlidingContent('curiosities-content-id', 'curiosities-img-id')"><p>CURIOSIDADES</p></a>
+                <div class="sliding-img" id="curiosities-img-id">
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+
+    </footer>    
+</body>
+</html>

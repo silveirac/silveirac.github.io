@@ -1,0 +1,196 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', Helvetica, Arial, sans-serif;
+}
+
+
+@media (max-width: 425px) {
+    body {
+        background-image: url(../img/campinas-bg.jpg);
+        background-repeat: no-repeat;
+        background-attachment:scroll;
+    }
+
+    .header-container {
+        display: flex;
+        justify-content: center;
+        height: 110px;
+        background-color: rgba(255, 255, 255, 1);
+        padding: 25px;
+        box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
+        width: 100vw;
+    }
+
+    #tag-sp {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 40px;
+    }
+    
+    .brasao-campinas {
+        position: relative;
+        height: 160px;
+        z-index: 1;
+    }
+
+    .hamburger-menu {
+        position: absolute;
+        top: 22.5px;
+        right: 17.5px;
+        height: 20px;
+        z-index: 1;
+    }
+
+    #mobile-nav-menu-container {
+        display: none;
+        justify-content: center;
+        align-items: center;
+        padding: 70px 20px;
+        height: 50vh;
+        background-color:rgba(255, 255, 255, 1);
+        z-index: 1;
+    }
+
+    .mobile-nav-menu ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: 300px;
+        list-style: none;
+        font-weight: bold;
+    }
+
+    .mobile-nav-menu ul a {
+        text-decoration: none;
+        color: rgba(100, 100, 100, 1);
+    }
+
+    .content-phrase-container {
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+    }
+
+    .content-phrase-title {
+        position: absolute;
+        top: 180px;
+        font-size: 2.3rem;
+        color:rgba(255, 255, 255, 1);
+        text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+
+    .content-phrase-slogan {
+        position: relative;
+        display:flex;
+        flex-direction: column;
+        overflow: hidden;
+        width: 100vw;
+        height: 350px;
+    }
+
+    .slogan-campinas1 {
+        position: absolute;
+        color:rgba(255, 255, 255, 0.1);
+        left: -10px;
+        font-size: 8rem;
+        font-weight: 700;
+    }
+
+    .slogan-campinas2 {
+        position: absolute;
+        color:rgba(255, 255, 255, 0.25);
+        right: -15px;
+        top: 125px;
+        font-size: 4rem;
+        font-weight: 400;
+    }
+
+    .slogan-campinas3 {
+        position: absolute;
+        color:rgba(255, 255, 255, 0.25);
+        left: -300px;
+        top: 225px;
+        font-size: 6rem;
+        font-weight: 700;
+    }
+
+    .sliding-container-master {
+        position: relative;
+        margin-top: 100px;
+        background-color: rgba(255, 255, 255, 1);
+        padding: 50px 0;
+        box-shadow: 0 -0.25rem 0.25rem  rgba(0, 0, 0, 0.5)
+    }
+
+    .sliding-container {
+        display: flex;
+        height: 300px;
+    }
+
+    .sliding-content {
+        display: none;
+        background-color: rgba(220, 220, 220, 1);
+        width: 360px;
+        padding: 50px;
+    }
+
+    .sliding-tag {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 65px;
+        text-decoration: none;
+        font-size: 1.5rem;
+        color: rgba(220, 220, 220, 1);
+    }
+
+    #history-tag {
+        background-color: rgb(10, 46, 100);
+    }
+
+    #statistics-tag {
+        background-color: rgb(150, 0, 0);
+    }
+
+    #touristic-tag {
+        background-color: rgb(2, 102, 59);
+    }
+
+    #curiosities-tag {
+        background-color: rgb(220, 195, 1);
+    }
+
+    .sliding-tag p {
+        transform: rotate(-90deg);
+    }
+
+    #history-img-id {
+        background-image: url(../img/campinas-historica.jpg);
+        background-size: cover;
+        width: 360px;
+    }
+
+    #statistics-img-id {
+        background-image: url(../img/campinas-estatisticas.jpg);
+        background-size: cover;
+        width: 360px;
+    }
+
+    #touristic-img-id {
+        background-image: url(../img/campinas-turismo.jpg);
+        background-size: cover;
+        width: 360px;
+    }
+
+    #curiosities-img-id {
+        background-image: url(../img/campinas-curiosidades.jpeg);
+        background-size: cover;
+        width: 360px;
+    }
+}
+

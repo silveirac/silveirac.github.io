@@ -1,3 +1,5 @@
+/* FRONT-END I | AULA 14 MESA | CAUÊ SILVEIRA */
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 * {
@@ -51,9 +53,9 @@ header {
 
 .cards-container {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     flex-wrap: wrap;
-    margin: 8rem 1rem 2rem;
+    margin: 8rem 1rem 7rem;
     row-gap: 2rem;
     column-gap: 2rem;
 }
@@ -130,17 +132,40 @@ header {
 
 }
 
+.plus-button {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:rgba(0, 102, 159, 1);
+    border-radius: 100px;
+    height: 75px;
+    width: 75px;
+    right: 20px;
+    bottom: 80px;
+    z-index: 1;
+    box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.25);
+
+}
+
+.plus-button a {
+    color: white;
+    text-decoration: none;
+    font-size: 4rem;
+}
+
 footer {
+    position: fixed;
     display: flex;
     align-items: center;
     justify-content: center;
     height: 4rem;
     background-color: rgba(0, 102, 159, 1);
     color: white;
+    width: 100%;
+    bottom: 0;
 }
 
-@media (min-width: 1024px) {
-    .cards-container {
-        justify-content: flex-start;
-    }
+    .plus-button {
+        bottom: 85px;
 }
