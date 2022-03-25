@@ -142,7 +142,6 @@ body {
 }
 
 .sliding-content {
-    display: none;
     flex-direction: column;
     row-gap: 15px;
     background-color: rgba(220, 220, 220, 1);
@@ -238,7 +237,7 @@ body {
 }
 
 .video-container video {
-    width: 100%;
+    width: 100vw;
     max-width: 960px;
 
 }
