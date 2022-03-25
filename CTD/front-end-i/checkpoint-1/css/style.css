@@ -11,7 +11,7 @@
 body {
     background-image: url(../img/campinas-bg.jpg);
     background-repeat: no-repeat;
-    background-attachment:scroll;
+    background-attachment: scroll;
 }
 
 .header-container {
@@ -88,7 +88,7 @@ body {
 .content-phrase-title {
     position: absolute;
     top: 180px;
-    font-size: 2.3rem;
+    font-size: 2rem;
     color:rgba(255, 255, 255, 1);
     text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
 }
@@ -138,15 +138,28 @@ body {
 
 .sliding-container {
     display: flex;
-    height: 300px;
+    min-height: 300px;
 }
 
 .sliding-content {
     display: none;
+    flex-direction: column;
+    row-gap: 15px;
     background-color: rgba(220, 220, 220, 1);
     width: 100%;
-    padding: 50px;
-    overflow: scroll;
+    padding: 20px;
+}
+
+.sliding-content ul{
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+    padding-left: 20px;
+    font-size: 0.65rem;
+}
+
+.content-text-src {
+    font-size: 0.5rem;
 }
 
 .sliding-tag {
@@ -203,6 +216,33 @@ body {
     width: 100%;
 }
 
+.video-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: rgba(25, 25, 25, 1);
+    font-size: 1rem;
+    color:rgba(25, 25, 25, 1);
+}
+
+
+.video-container h2 {
+    padding: 50px 0 50px;
+    color:rgba(25, 25, 25, 1);
+    background-color: rgba(255, 255, 255, 1);
+    width: 100%;
+    text-align: center;
+
+}
+
+.video-container video {
+    width: 100%;
+    max-width: 960px;
+
+}
+
 .links {
     display: flex;
     flex-direction: column;
@@ -224,7 +264,7 @@ body {
 }
 
 .links-list-items a {
-    border-right: 1px solid black;
+    border-right: 1px solid rgba(50, 50, 50, 1);
     min-width: 210px;
     text-align: end;
     padding-right: 20px;
@@ -365,8 +405,10 @@ body {
     }
 
     .sliding-container {
-        height: 500px;
+        min-height: 405px;
         width: 25vw;
+        transition: 1;
+        font-size: 0.75rem;
     }
 
     .links-list-items p {
