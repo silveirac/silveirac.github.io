@@ -2,195 +2,375 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    list-style: none;
     font-family: 'Poppins', Helvetica, Arial, sans-serif;
 }
 
 
-@media (max-width: 425px) {
-    body {
-        background-image: url(../img/campinas-bg.jpg);
-        background-repeat: no-repeat;
-        background-attachment:scroll;
-    }
 
+body {
+    background-image: url(../img/campinas-bg.jpg);
+    background-repeat: no-repeat;
+    background-attachment:scroll;
+}
+
+.header-container {
+    display: flex;
+    justify-content: center;
+    height: 110px;
+    background-color: rgba(255, 255, 255, 1);
+    padding: 25px;
+    box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
+    width: 100vw;
+}
+
+#tag-sp {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 40px;
+}
+
+.brasao-campinas {
+    position: relative;
+    height: 160px;
+    z-index: 1;
+}
+
+.city-header-desktop-title {
+    display: none;
+}
+
+.desktop-menu {
+    display: none;
+}
+
+.hamburger-menu {
+    position: absolute;
+    top: 22.5px;
+    right: 17.5px;
+    height: 20px;
+    z-index: 1;
+}
+
+#mobile-nav-menu-container {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    padding: 70px 20px;
+    height: 50vh;
+    background-color:rgba(255, 255, 255, 1);
+    z-index: 1;
+}
+
+.mobile-nav-menu ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 300px;
+    list-style: none;
+    font-weight: bold;
+}
+
+.mobile-nav-menu ul a {
+    text-decoration: none;
+    color: rgba(100, 100, 100, 1);
+}
+
+.content-phrase-container {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.content-phrase-title {
+    position: absolute;
+    top: 180px;
+    font-size: 2.3rem;
+    color:rgba(255, 255, 255, 1);
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.content-phrase-slogan {
+    position: relative;
+    display:flex;
+    flex-direction: column;
+    overflow: hidden;
+    width: 100vw;
+    height: 350px;
+}
+
+.slogan-campinas1 {
+    position: absolute;
+    color:rgba(255, 255, 255, 0.1);
+    left: -10px;
+    font-size: 8rem;
+    font-weight: 700;
+}
+
+.slogan-campinas2 {
+    position: absolute;
+    color:rgba(255, 255, 255, 0.25);
+    right: -15px;
+    top: 125px;
+    font-size: 4rem;
+    font-weight: 400;
+}
+
+.slogan-campinas3 {
+    position: absolute;
+    color:rgba(255, 255, 255, 0.25);
+    left: -300px;
+    top: 225px;
+    font-size: 6rem;
+    font-weight: 700;
+}
+
+.sliding-container-master {
+    position: relative;
+    margin-top: 100px;
+    background-color: rgba(255, 255, 255, 1);
+    padding:  0;
+    box-shadow: 0 -0.25rem 0.25rem  rgba(0, 0, 0, 0.5);
+}
+
+.sliding-container {
+    display: flex;
+    height: 300px;
+}
+
+.sliding-content {
+    display: none;
+    background-color: rgba(220, 220, 220, 1);
+    width: 100%;
+    padding: 50px;
+    overflow: scroll;
+}
+
+.sliding-tag {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 65px;
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: rgba(220, 220, 220, 1);
+}
+
+#history-tag {
+    background-color: rgb(10, 46, 100);
+}
+
+#statistics-tag {
+    background-color: rgb(150, 0, 0);
+}
+
+#touristic-tag {
+    background-color: rgb(2, 102, 59);
+}
+
+#curiosities-tag {
+    background-color: rgb(220, 195, 1);
+}
+
+.sliding-tag p {
+    transform: rotate(-90deg);
+}
+
+#history-img-id {
+    background-image: url(../img/campinas-historica.jpg);
+    background-size: cover;
+    width: 100%;
+}
+
+#statistics-img-id {
+    background-image: url(../img/campinas-estatisticas.jpg);
+    background-size: cover;
+    width: 100%;
+}
+
+#touristic-img-id {
+    background-image: url(../img/campinas-turismo.jpg);
+    background-size: cover;
+    width: 100%;
+}
+
+#curiosities-img-id {
+    background-image: url(../img/campinas-curiosidades.jpeg);
+    background-size: cover;
+    width: 100%;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 30px;
+    padding: 40px 20px 80px;
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.links-list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+}
+
+.links-list-items {
+    display: flex;
+    align-items:  center;
+}
+
+.links-list-items a {
+    border-right: 1px solid black;
+    min-width: 210px;
+    text-align: end;
+    padding-right: 20px;
+    color:rgb(10, 46, 100);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.links-list-items p {
+    text-align: start;
+    padding-left: 20px;
+    font-size: 0.75rem;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10vw;
+    height: 300px;
+    background-color: rgba(220, 220, 220, 1);
+    font-size: 0.75rem;
+    padding: 20px;
+}
+
+.linkedin-footer div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: rgba(25, 25, 25, 1);
+
+}
+
+.linkedin-footer {
+    text-decoration: none;
+}
+
+.github-footer div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: rgba(25, 25, 25, 1);
+}
+
+.github-footer {
+    text-decoration: none;
+    padding: 30px;
+}
+
+.github-footer-img {
+    height: 35px;
+}
+
+.footer-rights {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    color: rgba(180, 180, 180, 1);
+    background-color: rgba(25, 25, 25, 1);
+}
+
+
+@media (min-width: 1280px) {
     .header-container {
         display: flex;
-        justify-content: center;
-        height: 110px;
-        background-color: rgba(255, 255, 255, 1);
-        padding: 25px;
-        box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
-        width: 100vw;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 150px;
     }
 
-    #tag-sp {
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 40px;
+    .desktop-brasao-title {
+        display: flex;
+        column-gap: 20px;
     }
-    
+
     .brasao-campinas {
-        position: relative;
-        height: 160px;
-        z-index: 1;
+        display: block;
+        height: 80px;
+    }
+
+    .city-header-desktop-title {
+        display: block;
+        font-size: 50px;
+        font-weight: 700;
+        color:rgba(50, 50, 50, 1);
     }
 
     .hamburger-menu {
-        position: absolute;
-        top: 22.5px;
-        right: 17.5px;
-        height: 20px;
-        z-index: 1;
-    }
-
-    #mobile-nav-menu-container {
         display: none;
-        justify-content: center;
-        align-items: center;
-        padding: 70px 20px;
-        height: 50vh;
-        background-color:rgba(255, 255, 255, 1);
-        z-index: 1;
     }
 
-    .mobile-nav-menu ul {
+    .desktop-menu {
+        display: block;
+    }
+
+    .desktop-menu ul {
         display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        height: 300px;
-        list-style: none;
-        font-weight: bold;
+        column-gap: 30px;        
     }
 
-    .mobile-nav-menu ul a {
+    .desktop-menu ul li a {
+        color:rgba(50, 50, 50, 1);
         text-decoration: none;
-        color: rgba(100, 100, 100, 1);
-    }
-
-    .content-phrase-container {
-        display:flex;
-        flex-direction: column;
-        align-items: center;
-        position: relative;
-    }
-
-    .content-phrase-title {
-        position: absolute;
-        top: 180px;
-        font-size: 2.3rem;
-        color:rgba(255, 255, 255, 1);
-        text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
     }
 
     .content-phrase-slogan {
-        position: relative;
-        display:flex;
-        flex-direction: column;
-        overflow: hidden;
-        width: 100vw;
-        height: 350px;
+        height: 500px;
     }
 
     .slogan-campinas1 {
-        position: absolute;
-        color:rgba(255, 255, 255, 0.1);
-        left: -10px;
-        font-size: 8rem;
-        font-weight: 700;
+        left: 50vh;
+        font-size: 150px;
     }
 
     .slogan-campinas2 {
-        position: absolute;
-        color:rgba(255, 255, 255, 0.25);
-        right: -15px;
-        top: 125px;
-        font-size: 4rem;
-        font-weight: 400;
+        top: 200px;
+        right: 100px;
+        font-size: 200px;
     }
 
     .slogan-campinas3 {
-        position: absolute;
-        color:rgba(255, 255, 255, 0.25);
-        left: -300px;
-        top: 225px;
-        font-size: 6rem;
-        font-weight: 700;
+        top: 400px;
+        left: 200px;
+        font-size: 80px;
+    }
+
+    .content-phrase-title {
+        display: none;
     }
 
     .sliding-container-master {
-        position: relative;
-        margin-top: 100px;
-        background-color: rgba(255, 255, 255, 1);
-        padding: 50px 0;
-        box-shadow: 0 -0.25rem 0.25rem  rgba(0, 0, 0, 0.5)
+        display: flex;
+        justify-content: center;
+        column-gap: 0;
     }
 
     .sliding-container {
-        display: flex;
-        height: 300px;
+        height: 500px;
+        width: 25vw;
     }
 
-    .sliding-content {
-        display: none;
-        background-color: rgba(220, 220, 220, 1);
-        width: 360px;
-        padding: 50px;
+    .links-list-items p {
+        font-size: 1rem;
     }
 
-    .sliding-tag {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 65px;
-        text-decoration: none;
-        font-size: 1.5rem;
-        color: rgba(220, 220, 220, 1);
-    }
-
-    #history-tag {
-        background-color: rgb(10, 46, 100);
-    }
-
-    #statistics-tag {
-        background-color: rgb(150, 0, 0);
-    }
-
-    #touristic-tag {
-        background-color: rgb(2, 102, 59);
-    }
-
-    #curiosities-tag {
-        background-color: rgb(220, 195, 1);
-    }
-
-    .sliding-tag p {
-        transform: rotate(-90deg);
-    }
-
-    #history-img-id {
-        background-image: url(../img/campinas-historica.jpg);
-        background-size: cover;
-        width: 360px;
-    }
-
-    #statistics-img-id {
-        background-image: url(../img/campinas-estatisticas.jpg);
-        background-size: cover;
-        width: 360px;
-    }
-
-    #touristic-img-id {
-        background-image: url(../img/campinas-turismo.jpg);
-        background-size: cover;
-        width: 360px;
-    }
-
-    #curiosities-img-id {
-        background-image: url(../img/campinas-curiosidades.jpeg);
-        background-size: cover;
-        width: 360px;
-    }
 }
-

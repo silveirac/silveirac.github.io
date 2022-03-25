@@ -17,33 +17,55 @@
             <nav class="mobile-nav-menu">
                 <ul>
                     <li>
-                        <a href="#">História da cidade</a>
+                        <a href="#history-tag">História</a>
                     </li>
                     <li>
-                        <a href="#">Estatísticas</a>
+                        <a href="#statistics-tag">Estatísticas</a>
                     </li>
                     <li>
-                        <a href="#">Pontos turísticos</a>
+                        <a href="#touristic-tag">Turismo</a>
                     </li>
                     <li>
-                        <a href="#">Campinas e TI</a>
+                        <a href="#curiosities-tag">Curiosidades</a>
                     </li>
                     <li>
-                        <a href="#">Links úteis</a>
+                        <a href="#links-id">Links úteis</a>
                     </li>
                 </ul>
             </nav>
         </div>
         <div class="header-container">
-            <a href="https://www.saopaulo.sp.gov.br/">
+            <a href="https://www.saopaulo.sp.gov.br/" id="tag-sp">
                 <img src="./img/tag-sp.png" alt="" id="tag-sp">
             </a>
-            <a class="brasao-campinas" href="#">
-                <img class="brasao-campinas" src="./img/brasao-campinas.png" alt="brasão da cidade de Campinas">
-            </a>
+                <div class="desktop-brasao-title">
+                    <a class="brasao-campinas" href="#">
+                        <img class="brasao-campinas" src="./img/brasao-campinas.png" alt="brasão da cidade de Campinas">
+                    </a>
+                    <p class="city-header-desktop-title">CAMPINAS</p>
+                </div>
             <a class="hamburger-menu" href="javascript:void(0)" onclick="togleMobileMenu('mobile-nav-menu-container')">
                 <img class="hamburger-menu" src="./img/hamburgermenu.svg" alt="">
             </a>
+            <nav class="desktop-menu">
+                <ul>
+                    <li>
+                        <a href="#history-tag">História</a>
+                    </li>
+                    <li>
+                        <a href="#statistics-tag">Estatísticas</a>
+                    </li>
+                    <li>
+                        <a href="#touristic-tag">Turismo</a>
+                    </li>
+                    <li>
+                        <a href="#curiosities-tag">Curiosidades</a>
+                    </li>
+                    <li>
+                        <a href="#links-id">Links úteis</a>
+                    </li>
+                </ul>
+            </nav>
         </div>
     </header>
     <main>
@@ -59,41 +81,80 @@
         </div>
         <div class="sliding-container-master">
             <div class="sliding-container">
-                <div class="sliding-content" id="history-content-id">
+                <div class="sliding-content" id="history-content-id" style="display: none">
                     <p class="content-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus accusamus similique quasi cupiditate earum autem animi ratione libero, incidunt eligendi qui beatae provident dolorum quae id sequi. Maiores dignissimos voluptatum adipisci possimus fugiat animi aut autem dolorum. Molestias odio reiciendis veniam adipisci. Laudantium quaerat ipsa, molestias voluptatem quasi quam itaque?</p>
                 </div>
                 <a href="javascript:void(0)" class="sliding-tag" id="history-tag" onclick="togleSlidingContent('history-content-id', 'history-img-id')"><p>HISTÓRIA</p></a>
-                <div class="sliding-img" id="history-img-id">
+                <div class="sliding-img" id="history-img-id" style="display: flex">
                 </div>
             </div>
             <div class="sliding-container">
-                <div class="sliding-content" id="statistics-content-id">
+                <div class="sliding-content" id="statistics-content-id" style="display: none">
                     <p class="content-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus accusamus similique quasi cupiditate earum autem animi ratione libero, incidunt eligendi qui beatae provident dolorum quae id sequi. Maiores dignissimos voluptatum adipisci possimus fugiat animi aut autem dolorum. Molestias odio reiciendis veniam adipisci. Laudantium quaerat ipsa, molestias voluptatem quasi quam itaque?</p>
                 </div>
                 <a href="javascript:void(0)" class="sliding-tag" id="statistics-tag" onclick="togleSlidingContent('statistics-content-id', 'statistics-img-id')"><p>ESTATÍSTICAS</p></a>
-                <div class="sliding-img" id="statistics-img-id">
+                <div class="sliding-img" id="statistics-img-id" style="display: flex">
                 </div>
             </div>
             <div class="sliding-container">
-                <div class="sliding-content" id="touristic-content-id">
+                <div class="sliding-content" id="touristic-content-id" style="display: none">
                     <p class="content-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus accusamus similique quasi cupiditate earum autem animi ratione libero, incidunt eligendi qui beatae provident dolorum quae id sequi. Maiores dignissimos voluptatum adipisci possimus fugiat animi aut autem dolorum. Molestias odio reiciendis veniam adipisci. Laudantium quaerat ipsa, molestias voluptatem quasi quam itaque?</p>
                 </div>
                 <a href="javascript:void(0)" class="sliding-tag" id="touristic-tag" onclick="togleSlidingContent('touristic-content-id', 'touristic-img-id')"><p>TURISMO</p></a>
-                <div class="sliding-img" id="touristic-img-id">
+                <div class="sliding-img" id="touristic-img-id" style="display: flex">
                 </div>
             </div>
             <div class="sliding-container">
-                <div class="sliding-content" id="curiosities-content-id">
+                <div class="sliding-content" id="curiosities-content-id" style="display: none">
                     <p class="content-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus accusamus similique quasi cupiditate earum autem animi ratione libero, incidunt eligendi qui beatae provident dolorum quae id sequi. Maiores dignissimos voluptatum adipisci possimus fugiat animi aut autem dolorum. Molestias odio reiciendis veniam adipisci. Laudantium quaerat ipsa, molestias voluptatem quasi quam itaque?</p>
                 </div>
                 <a href="javascript:void(0)" class="sliding-tag" id="curiosities-tag" onclick="togleSlidingContent('curiosities-content-id', 'curiosities-img-id')"><p>CURIOSIDADES</p></a>
-                <div class="sliding-img" id="curiosities-img-id">
+                <div class="sliding-img" id="curiosities-img-id" style="display: flex">
                 </div>
             </div>
         </div>
+        <div class="links" id="links-id">
+            <h2 class="links-title">Links Úteis</h2>
+            <ul class="links-list">
+                <li class="links-list-items">
+                    <a href="https://portal.campinas.sp.gov.br/">Portal PMC</a>
+                    <p>Site oficial da Prefeitura Municipal de Campinas</p>
+                </li>
+                <li class="links-list-items">
+                    <a href="https://campinas.com.br/">Campinas.com.br</a>
+                    <p>Site com muitas informações sobre Campinas</p>
+                </li>
+                <li class="links-list-items">
+                    <a href="https://pt.wikipedia.org/wiki/Campinas">Campinas (Município)</a>
+                    <p>Página oficial da cidade na Wikipedia</p>
+                </li>
+                <li class="links-list-items">
+                    <a href="https://www.google.com/maps/place/Campinas+-+State+of+S%C3%A3o+Paulo/@-22.8949765,-47.3112271,10z/data=!3m1!4b1!4m5!3m4!1s0x94c8c8f6a2552649:0x7475001c58043536!8m2!3d-22.9050824!4d-47.0613327">Veja no Mapa</a>
+                    <p>Campinas no Google Maps</p>
+                </li>
+
+            </ul>
+        </div>
     </main>
     <footer>
-
-    </footer>    
+        <div class="footer-container">
+            <a class="linkedin-footer" href="https://www.linkedin.com/in/caueasilveira/">
+                <div>
+                    <img class="linkedin-footer-img" src="./img/linkedin.svg" alt="Go to linkedin profile">
+                    <p class="linkedin-footer-msg">Check out my profile!</p>
+                </div>
+                
+            </a>
+            <a class="github-footer" href="https://github.com/silveirac/silveirac.github.io/tree/main/CTD/front-end-i/checkpoint-1">
+                <div>
+                    <img class="github-footer-img" src="./img/github.svg" alt="Go to github repository">
+                    <p class="github-footer-msg">Check out my code!</p>
+                </div>
+            </a>
+        </div>
+        <div class="footer-rights">
+            <p>Front-end I | Checkpoint I | Cauê Silveira</p>
+        </div>      
+    </footer>
 </body>
 </html>
