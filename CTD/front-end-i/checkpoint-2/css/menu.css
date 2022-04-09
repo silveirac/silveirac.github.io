@@ -1,0 +1,162 @@
+/* 
+Front-end I - Checkpoint 2
+
+Integrantes:
+  Cauê Silveira
+  Claudio Lague
+  Matheus Abreu
+  Rafael Varela 
+*/
+
+#hamburger-menu-label {
+  display: flex;
+  flex-direction: column;
+  row-gap: 4px;
+  width: 25px;
+  cursor: pointer;
+  position: relative;
+}
+
+.bar {
+  height: 2px;
+  width: 25px;
+  background-color: rgba(50, 50, 50, 1);
+}
+
+#hamburger-menu:checked + label .bar-top {
+  position: absolute;
+  transform: rotate(45deg);
+  transition: 300ms;
+}
+
+#hamburger-menu:checked + label .bar-middle {
+  opacity: 0;
+}
+
+#hamburger-menu:checked + label .bar-bottom {
+  position: absolute;
+  transform: rotate(-45deg);
+  transition: 300ms;
+}
+
+.dark-filter {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+#hamburger-menu:checked ~ .dark-filter {
+  display: flex;
+  position: absolute;
+  top: 75px;
+  left: 0;
+  height: calc(100vh + 75px);
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.hamburger-menu {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.header-mobile-menu {
+  position: fixed;
+  top: 75px;
+  right: 0;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 1);
+  height: calc(100vh - 75px);
+  width: 0;
+  max-width: 277px;
+  padding: 65px 0;
+  row-gap: 30px;
+  transition: 300ms;
+}
+
+#hamburger-menu:checked ~ .header-mobile-menu {
+  width: 65vw;
+  max-width: 277px;
+  padding: 65px 20px 0;
+  box-shadow: -4px 0 4px rgba(0, 0, 0, 0.25)
+}
+
+.header-mobile-menu ul {
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+  padding-left: 30px;
+}
+
+.header-mobile-menu ul li a {
+  color: rgba(50, 50, 50, 1);
+  text-decoration: none;
+}
+
+.login-form {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+  bottom: 15px;
+  background-color: white;
+}
+
+.login-input, .password-input {
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+  cursor: text;
+}
+
+#login-label, #password-label {
+  padding-left: 10px;
+}
+
+.input-field {
+  background-color: rgba(220,220, 222, 1);
+  height: 40px;
+  width: 236px;
+  border: none;
+  border-top: 1px solid rgba(200, 200, 200, 1);
+  border-bottom: 1px solid rgba(200, 200, 200, 1);
+  padding-left: 10px;
+}
+
+.register-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  width: 236px;
+  border-top:1px solid rgba(50, 50, 50, 1);
+  font-size: 0.85rem;
+}
+
+.register-text .register-anchor {
+  color:rgb(49, 83, 156);
+}
+
+.header-mobile-login-button {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  height: 70px;
+  width: 236px;
+  border: none;
+  background-color: rgba(50, 50, 50, 1); 
+  color: rgba(255, 255, 255, 1);
+}
+
+@media (min-width: 1024px) {
+
+  #hamburger-menu-label {
+    display: none;
+  }
+
+}

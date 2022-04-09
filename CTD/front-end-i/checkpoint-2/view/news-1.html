@@ -1,0 +1,108 @@
+<!-- 
+Front-end I - Checkpoint 2
+
+Integrantes:
+  Cauê Silveira
+  Claudio Lague
+  Matheus Abreu
+  Rafael Varela 
+ -->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Front-news | Clássico carioca</title>
+  <!-- CSS Files -->
+  <link href="../css/style.css" rel="stylesheet">
+  <link href="../css/menu.css" rel="stylesheet">
+  <link href="../css/article.css" rel="stylesheet">
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <a href="../index.html" class="header-logo-container">
+        <img class="header-logo" src="../img/logo.svg" alt="logo front news">
+      </a>
+      <nav class="header-nav-menu">
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../index.html#news-wrapper">Artigos</a></li>
+          <li><a href="../index.html#videos-wrapper">Vídeos</a></li>
+          <li><a href="../view/sobre-nos.html">Sobre nós</a></li>
+          <li>
+            <a href="./login.html" class="header-login-a">Login</a>
+          </li>
+        </ul>
+      </nav>
+        <input type="checkbox" class="hamburger-menu" id="hamburger-menu">    
+        <label for="hamburger-menu" id="hamburger-menu-label">
+          <div class="bar bar-top"></div>
+          <div class="bar bar-middle"></div>
+          <div class="bar bar-bottom"></div>          
+        </label>
+        <div class="dark-filter"></div>
+      <nav class="header-mobile-menu">
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../index.html#news-wrapper">Artigos</a></li>
+          <li><a href="../index.html#videos-wrapper">Vídeos</a></li>
+          <li><a href="../view/sobre-nos.html">Sobre nós</a></li>
+        </ul>
+        <form action="#" class="login-form">
+          <div class="login-input">
+            <label for="login" id="login-label">Usuário</label>
+            <input type="text" class="input-field" id="login" name="login" placeholder="Seu usuário">
+          </div>
+          <div class="password-input">
+            <label for="password" id="password-label">Senha</label>
+            <input type="password" class="input-field" id="password" name="password" placeholder="Sua senha">
+          </div>
+          <button class="header-mobile-login-button" type="submit">Entrar</button>
+          <p class="register-text">Não é cadastrado? &nbsp<a href="#" class="register-anchor">Registre-se aqui.</a></p>
+        </form>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <article>
+      <div class="featured-img-container">
+        <img src="../img/news-1.jpg" alt="foto da notícia" class="featured-img">
+      </div>
+      <div class="article-body">
+        <iframe class="embeded-article" src="../articles/futebol-1.html" scrolling="no" frameborder="0"></iframe>
+      </div>
+    </article>
+  </main>
+  <footer id="footer">
+    <div class="footer-container">
+      <nav class="footer-menu">
+        <a href="#" class="footer-logo">
+          <img src="../img/footer-logo.svg" alt="front news">
+        </a>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../index.html#news-wrapper">Artigos</a></li>
+          <li><a href="../index.html#videos-wrapper">Vídeos</a></li>
+          <li><a href="../view/sobre-nos.html">Sobre nós</a></li>
+        </ul>
+      </nav>
+      <a class="github-footer" href="https://github.com/silveirac/silveirac.github.io/tree/main/CTD/front-end-i/checkpoint-2/">
+        <div>
+          <img class="github-footer-img" src="../img/github.svg" alt="Go to github repository">
+          <p class="github-footer-msg">Check out my code!</p>
+        </div>
+      </a>
+    </div>
+    <div class="footer-rights">
+      <p class="rights">Checkpoint 2 | Desenvolvido em abril de 2022</p>
+    </div>
+  </footer>
+</body>
+</html>
