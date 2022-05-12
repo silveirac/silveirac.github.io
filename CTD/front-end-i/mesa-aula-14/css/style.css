@@ -39,18 +39,6 @@ header {
     color: white;
 }
 
-/* header for 1024px+ wide */ 
-@media (min-width: 1024px) {
-    .bar-discount {
-        justify-content: flex-start;
-        padding: 1em;
-    }
-    .header-container {
-        justify-content: flex-start;
-        padding: 1em;
-    }
-}
-
 .cards-container {
     display: flex;
     justify-content: center;
@@ -166,6 +154,39 @@ footer {
     bottom: 0;
 }
 
-    .plus-button {
-        bottom: 85px;
+.github-footer {
+    text-decoration: none;
+    color:rgba(243, 243, 243, 1);
+    font-size: 0.75rem;
+    position: absolute;
+    top: 13px;
+    right: 15px;
+}
+
+.github-footer div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 5px;
+}
+
+.github-footer-img {
+    height: 25px;
+}
+
+.plus-button {
+    bottom: 85px;
+}
+
+
+/* header for 1024px+ wide */ 
+@media (min-width: 1024px) {
+    .bar-discount {
+        justify-content: flex-start;
+        padding: 1em;
+    }
+    .header-container {
+        justify-content: flex-start;
+        padding: 1em;
+    }
 }

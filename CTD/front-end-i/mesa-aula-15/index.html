@@ -1,0 +1,63 @@
+<!-- Front-end I | Mesa 15 | Cauê Silveira -->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mesa 15 | Login</title>
+    <link rel="stylesheet" href="./css/style.css" type="text/css">
+    <script type="text/javascript" src="./js/script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="discount-bar">
+            <p class="discount-bar-text">20% de desconto para todos os cards!</p>
+
+        </div>
+        <div class="header-container">
+            <img src="./img/store-logo.svg" alt="" class="header-logo">
+            <h1 class="header-shop-title">Super-heroes Card Store</h1>
+        </div>
+    </header>
+    <main>
+        <div class="form-container">
+            <form action="#" class="form-main">
+                <h2 class="form-title">Login</h2>
+                <div class="form-input-fields">
+                    <div class="form-input-container">
+                        <label for="userLogin" class="input-label" id="userLogin-label" style="display: block">Usuário</label>
+                        <input type="text" id="userLogin" name="userLogin" class="input-box" onfocus="labelHidding('userLogin-label')" onblur="labelHidding('userLogin-label')" href="javascript:void(0)">
+                    </div>
+                    <div class="form-input-container">
+                        <label for="passwordLogin" class="input-label" id="passwordLogin-label" style="display: block">Senha</label>
+                        <input type="password" id="passwordLogin" name="passwordLogin" class="input-box" onfocus="labelHidding('passwordLogin-label')" onblur="labelHidding('passwordLogin-label')" href="javascript:void(0)">
+                    </div>
+                </div>
+                <div class="form-buttons-container">
+                    <input type="submit" id="submitLogin" class="submit-button" value="Entrar">
+                </div>
+                <div class="form-msg">
+
+                </div>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <p class="footer-rights">Todos os direitos reservados à Front-end I</p>
+            <a href="" class="footer-github-link">
+                <div class="footer-github-link-content">
+                    <img src="./img/github.svg" alt="repostitório github" class="footer-github-logo">
+                    <p class="footer-github-msg">Check out my code!</p>
+                </div>
+            </a>
+        </div>
+
+    </footer>  
+</body>
+</html>
