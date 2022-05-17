@@ -1,7 +1,7 @@
-//Exercício “Igualdade, if e else”
+// Exercício “Pode Subir”
 
 function podeSubir (altura, acompanhado) {
-    let autorizacao = false;
+
     if (altura < 1.2 || altura >= 2) {
         return "Acesso negado.";
     } else if (altura >= 1.4) {
