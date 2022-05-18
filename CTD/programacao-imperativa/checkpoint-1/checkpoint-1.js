@@ -1,4 +1,4 @@
-// CTD - PROGRAMAÇÃO IMPERATIVA - TUMA 1
+// CTD - PROGRAMAÇÃO IMPERATIVA - TURMA 1
 // Cauê Silveira
 
 /* 
