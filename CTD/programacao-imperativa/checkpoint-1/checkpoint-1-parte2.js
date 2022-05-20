@@ -49,9 +49,11 @@ function maiorMenor2 (num1, num2, num3) {
                 num2 > num3 ? num2 : num3;;
         menor = num1 > num3 ? num3 : num1;
     }
+
+    return `${maior} é o maior valor e  ${menor} é o menor valor.`
 }
 
-console.log(maiorMenor(27, 15, 21)); //teste
+console.log(maiorMenor2(27, 15, 21)); //teste
 
 
 
