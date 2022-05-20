@@ -35,7 +35,7 @@ function microondas (opcao, tempo) {
     } else if (tempo > (3 * tempoPadrao)) {
         return "Kabum! Prato pronto, bom apetite!!!";
     } else {
-        return "Prato pronto, bom apetite!!!"
+        return "Prato pronto, bom apetite!!!";
     }
 
 }
