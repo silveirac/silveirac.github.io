@@ -34,10 +34,13 @@ function maiorMenor (num1, num2, num3) {
     return `${maior} é o maior valor e  ${menor} é o menor valor.`
 }
 
-console.log(maiorMenor(7, 15, 12));
+console.log(maiorMenor(7, 15, 12)); //teste
 
 // Solução 2 (Operador ternário)
 function maiorMenor2 (num1, num2, num3) {
+    let maior;
+    let menor;
+
     if (num1 > num2) {
         maior = num1 > num3 ? num1 : num3;
         menor = num2 > num3 ? num3 : num2;
@@ -48,7 +51,7 @@ function maiorMenor2 (num1, num2, num3) {
     }
 }
 
-console.log(maiorMenor(27, 15, 21));
+console.log(maiorMenor(27, 15, 21)); //teste
 
 
 
