@@ -1,3 +1,7 @@
+//INTEGRANTES
+// CAUÊ SILVEIRA
+// EDUARDO SERODIO
+
 const alicia = [23, 69, 32];
 const bob = [12, 67, 43];
 
