@@ -27,6 +27,7 @@ console.log(palavrasMaior(palavras, 4));
 
 // 3.
 
+/* por NOME */
 const alunos = [{nome: 'Carlos', nota: 8}, {nome: 'Pedro', nota: 7}, {nome: 'Joana', nota: 10}, {nome: 'Zeca', nota: 3}, {nome: 'Marcos', nota: 6}];
 
 alunos.sort(function (a, b) {
@@ -42,13 +43,10 @@ alunos.sort(function (a, b) {
 
 console.log(alunos);
 
+/* por NOTA */
 
-//
-const nomes = ["pneumoultramicroscopicossilicovulcanoconiótico", "anticonstitucionalismo", "robison", "pa" ];
+alunos.sort((a, b) => a.nota - b.nota);
+console.log(alunos);
 
-const nomesgrandes = nomes.filter((nomes) => {
-    return nomes.length > 10  
-});
 
-console.log(nomesgrandes); // fiz esse e deu
 
