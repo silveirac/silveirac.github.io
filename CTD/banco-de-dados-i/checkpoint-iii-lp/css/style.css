@@ -232,8 +232,8 @@ body {
 @media (max-height: 510px) {
     .mysql-footer-logo {
         position: absolute;
-        right: 1.825vw;
+        right: 0;
         bottom: 4.3vh;
-        height: 15vh;
+        height: 13vh;
     }
-}
+}   
