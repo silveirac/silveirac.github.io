@@ -17,74 +17,6 @@ body {
 }
 
 
-@media (min-width: 1024px) {
-    main {
-        display: flex;
-        align-items: center;
-        padding: 0 200px;
-        height: 90vh;
-    }
-    
-    .main-container {
-        display: flex;
-        flex-direction: column;    
-        justify-content: center;
-        row-gap: 5.5vh;
-    }
-    
-    .main-logo {
-        width: 80%;
-        min-width: 390px !important;
-    }
-    
-    .buttons-container {
-        display: flex;
-        flex-wrap: wrap;
-        column-gap: 3vw;
-        width: 100%;
-        
-    }
-    
-    .download-button {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 8vh;
-        max-width: 300px;
-        width: 15vw;
-        background-color: #4458be;
-        color: #fff;
-        box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
-        border-radius: 5px;
-        font-size: 1.3vw;
-        font-weight: 400;
-    }
-    
-    .spread-sheet-button {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 8vh;
-        max-width: 300px;
-        width: 15vw;
-        border: solid 2px #fff;
-        color: #fff;
-        box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
-        border-radius: 5px;
-        font-size: 1.3vw;
-        font-weight: 400;
-    }
-    
-    .mysql-footer-logo {
-        position: absolute;
-        right: 70px;
-        bottom: 50px;
-        height: 70px;
-    }
-}
-
-
-
 @media (max-width: 1023px) {
     main {
         display: flex;
@@ -99,6 +31,30 @@ body {
         justify-content: center;
         align-items: center;
         row-gap: 5.5vh;
+    }
+
+    .github-cto-container {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        column-gap: 15px;
+        max-width: 90vw;
+        color: #fff;
+        top: 3vh;
+        right: 5vw;
+    }
+
+    .github-cto-arrow {
+        height: 2.5vh;
+    }
+
+    .github-cto-msg-link {
+        font-weight: 700;
+        color: #fff;
+    }
+
+    .github-cto-msg-link:visited {
+        color: #fff;
     }
     
     .main-logo {
@@ -158,6 +114,100 @@ body {
         right: calc(50vw - (85px));
         max-width: 170px;
         width: 40vw;
+    }
+}
+
+@media (min-width: 1024px) {
+    main {
+        display: flex;
+        align-items: center;
+        padding: 0 200px;
+        height: 90vh;
+    }
+    
+    .main-container {
+        display: flex;
+        flex-direction: column;    
+        justify-content: center;
+        row-gap: 5.5vh;
+    }
+    
+    .github-cto-container {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        column-gap: 1.2vw;
+        max-width: 90vw;
+        color: #fff;
+        top: 3vh;
+        right: 3vw;
+    }
+
+    .github-cto-arrow {
+        height: 2.5vh;
+    }
+
+    .github-cto-msg {
+        font-size: 2.2vh;
+    }
+
+    .github-cto-msg-link {
+        font-weight: 700;
+        color: #fff;
+    }
+
+    .github-cto-msg-link:visited {
+        color: #fff;
+    }
+
+    .main-logo {
+        width: 80%;
+        min-width: 390px !important;
+    }
+    
+    .buttons-container {
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 3vw;
+        width: 100%;
+        
+    }
+    
+    .download-button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 8vh;
+        max-width: 300px;
+        width: 15vw;
+        background-color: #4458be;
+        color: #fff;
+        box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
+        border-radius: 5px;
+        font-size: 1.3vw;
+        font-weight: 400;
+    }
+    
+    .spread-sheet-button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 8vh;
+        max-width: 300px;
+        width: 15vw;
+        border: solid 2px #fff;
+        color: #fff;
+        box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
+        border-radius: 5px;
+        font-size: 1.3vw;
+        font-weight: 400;
+    }
+    
+    .mysql-footer-logo {
+        position: absolute;
+        right: 70px;
+        bottom: 50px;
+        height: 70px;
     }
 }
 
