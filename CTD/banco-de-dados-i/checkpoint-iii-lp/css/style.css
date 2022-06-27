@@ -101,14 +101,8 @@ body {
         font-size: 1.3rem;
         font-weight: 400;
     }
-    
-    footer {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
 
-    .mysql-footer-logo {
+    .mysql-logo {
         position: absolute;
         bottom: 30px;
         right: calc(50vw - (85px));
@@ -203,7 +197,7 @@ body {
         font-weight: 400;
     }
     
-    .mysql-footer-logo {
+    .mysql-logo {
         position: absolute;
         right: 70px;
         bottom: 50px;
@@ -221,7 +215,7 @@ body {
         max-width: 680px !important;
     }
 
-    .mysql-footer-logo {
+    .mysql-logo {
         position: absolute;
         right: 3.65vw;
         bottom: 4.6vh;
@@ -230,7 +224,11 @@ body {
 }
 
 @media (max-height: 510px) {
-    .mysql-footer-logo {
+    .footer {
+        display: none;
+    }
+
+    .mysql-logo {
         position: absolute;
         right: -1vw;
         bottom: 1vh;
