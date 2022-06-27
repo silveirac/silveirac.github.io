@@ -230,8 +230,8 @@ body {
 
     .mysql-logo {
         position: absolute;
-        right: -1vw;
-        bottom: 1vh;
+        right: 1vh !important;
+        bottom: 1vh !important;
         height: 13vh;
     }
 }   
