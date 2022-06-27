@@ -12,111 +12,169 @@ html {
 }
 
 body {
-    background-image: url(../assets/index-background.png);    
+    background: url(../assets/index-background.webp) no-repeat center;
+    background-size: cover;
 }
 
-/* .header-container {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0 70px;
-    height: 10vh;
-    width: 110;
-    border-bottom: solid 1px rgba(255, 255, 255, 0.25);
-}
 
-.header-logo {
-    position: absolute;
-    left: 30px;
-    height: 30px;
-}
-
-.nav-menu-list {
-    display: flex;
-    width: 100%;
-    font-size: 1.35rem;
-}
-
-.nav-menu-list-item {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 110px;
-    height: 10vh;
-}
-
-.list-item-link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: rgba(255, 255, 255, 1);
-    width: 110px;
-    height: 10vh;
-}
-
-.header-menu-active {
-    background-color: rgba(255, 255, 255, 0.15);
-    border-top: solid 5px rgba(255, 255, 255, 0.85);
-} */
-
-main {
-    display: flex;
-    align-items: center;
-    padding: 0 200px;
-    height: 90vh;
-}
-
-.main-container {
-    display: flex;
-    flex-direction: column;
-    row-gap: 50px;
-    align-items: center;
-    justify-content: center;
-}
-
-.main-logo {
-    width: 55vw;
-}
-
-.buttons-container {
-    display: flex;
-    column-gap: 3vw;
-    width: 100%;
+@media (min-width: 1024px) {
+    main {
+        display: flex;
+        align-items: center;
+        padding: 0 200px;
+        height: 90vh;
+    }
     
+    .main-container {
+        display: flex;
+        flex-direction: column;    
+        justify-content: center;
+        row-gap: 5.5vh;
+    }
+    
+    .main-logo {
+        width: 80%;
+        min-width: 390px !important;
+    }
+    
+    .buttons-container {
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 3vw;
+        width: 100%;
+        
+    }
+    
+    .download-button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 8vh;
+        max-width: 300px;
+        width: 15vw;
+        background-color: #4458be;
+        color: #fff;
+        box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
+        border-radius: 5px;
+        font-size: 1.3vw;
+        font-weight: 400;
+    }
+    
+    .spread-sheet-button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 8vh;
+        max-width: 300px;
+        width: 15vw;
+        border: solid 2px #fff;
+        color: #fff;
+        box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
+        border-radius: 5px;
+        font-size: 1.3vw;
+        font-weight: 400;
+    }
+    
+    .mysql-footer-logo {
+        position: absolute;
+        right: 70px;
+        bottom: 50px;
+        height: 70px;
+    }
 }
 
-.download-button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 70px;
-    width: 15vw;
-    background-color: #4458be;
-    color: #fff;
-    box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
-    border-radius: 5px;
-    font-size: 1.3rem;
-    font-weight: 400;
+
+
+@media (max-width: 1023px) {
+    main {
+        display: flex;
+        align-items: center;
+        padding: 0 5%;
+        height: 90vh;
+    }
+    
+    .main-container {
+        display: flex;
+        flex-direction: column;    
+        justify-content: center;
+        align-items: center;
+        row-gap: 5.5vh;
+    }
+    
+    .main-logo {
+        width: 80%;
+        min-width: 300px !important;
+    }
+    
+    .buttons-container {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 5vw;
+        width: 100%;
+        
+    }
+    
+    .download-button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100px;
+        max-width: 250px;
+        width: 70vw;
+        background-color: #4458be;
+        color: #fff;
+        box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
+        border-radius: 10px;
+        font-size: 1.3rem;
+        font-weight: 400;
+    }
+    
+    .spread-sheet-button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100px;
+        max-width: 250px;
+        width: 70vw;
+        border: solid 2px #fff;
+        color: #fff;
+        box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
+        border-radius: 10px;
+        font-size: 1.3rem;
+        font-weight: 400;
+    }
+    
+    footer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .mysql-footer-logo {
+        position: absolute;
+        bottom: 30px;
+        right: calc(50vw - (85px));
+        max-width: 170px;
+        width: 40vw;
+    }
 }
 
-.spread-sheet-button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 70px;
-    width: 15vw;
-    border: solid 2px #fff;
-    color: #fff;
-    box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
-    border-radius: 5px;
-    font-size: 1.3rem;
-    font-weight: 400;
-}
+@media (min-width: 1921px) {
+    .main-logo {
+        width: 150% !important;
+        max-width: 1500px;
+    }
 
-.mysql-footer-logo {
-    position: absolute;
-    right: 70px;
-    bottom: 50px;
-    height: 70px;
+    .download-button, .spread-sheet-button {
+        max-width: 680px !important;
+    }
+
+    .mysql-footer-logo {
+        position: absolute;
+        right: 3.65vw;
+        bottom: 4.6vh;
+        height: 6.5vh;
+    }
 }
