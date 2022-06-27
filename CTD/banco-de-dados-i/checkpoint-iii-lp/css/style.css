@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Poppins', Helvetica, Arial, sans-serif;
+}
+
+html {
+    height: 100vh;
+}
+
+body {
+    background-image: url(../assets/index-background.png);    
+}
+
+/* .header-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 70px;
+    height: 10vh;
+    width: 110;
+    border-bottom: solid 1px rgba(255, 255, 255, 0.25);
+}
+
+.header-logo {
+    position: absolute;
+    left: 30px;
+    height: 30px;
+}
+
+.nav-menu-list {
+    display: flex;
+    width: 100%;
+    font-size: 1.35rem;
+}
+
+.nav-menu-list-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 110px;
+    height: 10vh;
+}
+
+.list-item-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(255, 255, 255, 1);
+    width: 110px;
+    height: 10vh;
+}
+
+.header-menu-active {
+    background-color: rgba(255, 255, 255, 0.15);
+    border-top: solid 5px rgba(255, 255, 255, 0.85);
+} */
+
+main {
+    display: flex;
+    align-items: center;
+    padding: 0 200px;
+    height: 90vh;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-logo {
+    width: 55vw;
+}
+
+.buttons-container {
+    display: flex;
+    column-gap: 3vw;
+    width: 100%;
+    
+}
+
+.download-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    width: 15vw;
+    background-color: #4458be;
+    color: #fff;
+    box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+.spread-sheet-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    width: 15vw;
+    border: solid 2px #fff;
+    color: #fff;
+    box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+.mysql-footer-logo {
+    position: absolute;
+    right: 70px;
+    bottom: 50px;
+    height: 70px;
+}
