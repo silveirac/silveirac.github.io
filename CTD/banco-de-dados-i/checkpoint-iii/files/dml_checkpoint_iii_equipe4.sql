@@ -65,11 +65,11 @@ VALUES
 
 INSERT INTO PRODUTOS(ID_FORNECEDOR, ID_PLATAFORMA, NOME, DATA_LANCAMENTO, PRECO_COMPRA, PRECO_VENDA, CLASSIFICACAO, DESCRICAO, ESTOQUE)
 VALUES
-	(1,7,"FIFA 22","2021-09-27",49.90,99.90,"Livre","FIFA 22 é o novo jogo da renomada franquia de futebol, utilizando a tecnologia HyperMotion de última geração, que integra dados avançados de movimento de equipe e aprendizado de máquina para melhorar a jogabilidade.", 10),
-	(1, 3,"FIFA 22","2021-09-27",49.90,99.90,"Livre","FIFA 22 é o novo jogo da renomada franquia de futebol, utilizando a tecnologia HyperMotion de última geração, que integra dados avançados de movimento de equipe e aprendizado de máquina para melhorar a jogabilidade.", 10),
-    (2,6,"Assassins Creed: Valhalla","2020-11-10",65.45,149.90,"18+","Assassin's Creed Valhalla se ambienta no passado histórico do século IX.", 10),
-    (4, 2,"Grand Thefht Auto V","2013-09-17",35,79.90,"18+","O jogo se passa no estado ficcional de San Andreas, com a história da campanha um jogador seguindo três criminosos e seus esforços para realizarem assaltos.", 10),
-    (5,3,"Console Playstation 5","2020-01-01",2800,4199.00,"Livre","O aparelho também traz retrocompatibilidade para a maioria dos jogos do PS4 e integração com o PlayStation VR.", 10);
+	(1,7,"FIFA 22","2021-09-27",49.90,99.90,"Livre","FIFA 22 é o novo jogo da renomada franquia de futebol, utilizando a tecnologia HyperMotion de última geração, que integra dados avançados de movimento de equipe e aprendizado de máquina para melhorar a jogabilidade.", 14),
+	(1, 3,"FIFA 22","2021-09-27",49.90,99.90,"Livre","FIFA 22 é o novo jogo da renomada franquia de futebol, utilizando a tecnologia HyperMotion de última geração, que integra dados avançados de movimento de equipe e aprendizado de máquina para melhorar a jogabilidade.", 2),
+    (2,6,"Assassins Creed: Valhalla","2020-11-10",65.45,149.90,"18+","Assassin's Creed Valhalla se ambienta no passado histórico do século IX.", 8),
+    (4, 2,"Grand Thefht Auto V","2013-09-17",35,79.90,"18+","O jogo se passa no estado ficcional de San Andreas, com a história da campanha um jogador seguindo três criminosos e seus esforços para realizarem assaltos.", 22),
+    (5,3,"Console Playstation 5","2020-01-01",2800,4199.00,"Livre","O aparelho também traz retrocompatibilidade para a maioria dos jogos do PS4 e integração com o PlayStation VR.", 15);
 
 INSERT INTO PRODUTOS_GENEROS(ID_PRODUTO, ID_GENERO)
 VALUES
@@ -107,7 +107,8 @@ VALUES
 	(2,1,1,99.90),
 	(3,2,1,149.90),
 	(5,5,5,4199.00),
-	(2,4,1,99.90);
+	(2,4,1,99.90),
+    (3,3,1,149.90);
 
 INSERT INTO COMPRAS(ID_PAGAMENTO, DATA_COMPRA, DESCONTO, PARCELAMENTO)
 VALUES
@@ -118,9 +119,12 @@ VALUES
     (3, "2022-06-02", 0, 2);
     
 INSERT INTO PRODUTOS_COMPRAS(ID_COMPRA, ID_PRODUTO, QUANTIDADE, PRECO_COMPRA)
-VALUES
+VALUES (1, 4, 15, 14.90),
 	(1, 1, 5, 59.90),
     (2, 1, 2, 59.90),
-    (3, 5, 3, 3199.00),
+    (3, 5, 20, 3199.00),
     (4, 1, 5, 100.00),
-    (5, 1, 3, 59.90);
+    (5, 1, 3, 59.90),
+    (5, 3, 10, 5.90),
+    (5, 4, 7, 19.90),
+    (5, 2, 4, 59.90);
