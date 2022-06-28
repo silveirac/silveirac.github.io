@@ -2,16 +2,16 @@ USE PLAYDB;
 
 INSERT INTO PAISES(NOME, REGIAO)
 VALUES 
-		("Brasil", "América do Sul"),
-		("Argentina", "América do Sul"),
-        ("França", "Europa"),
-        ("Estados Unidos", "América do Norte"),
-        ("Paraguai", "América do Sul"),
-		("Colômbia", "América do Sul"),
-		("Peru", "América do Sul"),
-        ("Portugal", "Europa"),
-        ("Espanha", "Europa"),
-        ("Chile", "América do Sul");
+	("Brasil", "América do Sul"),
+	("Argentina", "América do Sul"),
+	("França", "Europa"),
+	("Estados Unidos", "América do Norte"),
+	("Paraguai", "América do Sul"),
+	("Colômbia", "América do Sul"),
+	("Peru", "América do Sul"),
+	("Portugal", "Europa"),
+	("Espanha", "Europa"),
+	("Chile", "América do Sul");
         
 INSERT INTO ENDERECOS(ID_PAIS, LOGRADOURO, COMPLEMENTO, BAIRRO, CIDADE, ESTADO, CEP)
 VALUES 
@@ -159,15 +159,21 @@ VALUES
     (7,4,3,"2022-03-15",20,3); 
     
 INSERT INTO PRODUTOS_VENDAS(ID_PRODUTO,ID_VENDA,QUANTIDADE, PRECO_VENDA) 
-VALUES (4,6,1,100),
-	(2,4,1,99.90),
-	(1,1,1,99.90),
-	(2,1,1,99.90),
-	(3,2,1,149.90),
-	(5,5,5,4199.00),
-	(2,4,1,99.90),
+VALUES 
+	(4,6,1,100),
+    (2,4,1,99.90),
+    (1,1,1,99.90),
+    (2,1,1,99.90),
+    (3,2,1,149.90),
+    (5,5,5,4199.00),
+    (2,4,1,99.90),
     (3,3,1,149.90),
-    (4,6,1,100);
+    (4,6,1,100.00),
+    (10,7,1,5500.00),
+    (6,8,1,4500.00),
+    (7,9,1,3500.00),
+    (8,10,1,3000.00),
+    (9,10,1,5000.00);
 
 INSERT INTO COMPRAS(ID_PAGAMENTO, DATA_COMPRA, DESCONTO, PARCELAMENTO)
 VALUES
@@ -183,12 +189,15 @@ VALUES
 	(3, "2021-12-16", 0, 1);
     
 INSERT INTO PRODUTOS_COMPRAS(ID_COMPRA, ID_PRODUTO, QUANTIDADE, PRECO_COMPRA)
-VALUES (1, 4, 15, 14.90),
+VALUES 
+	(1, 4, 15, 14.90),
 	(1, 1, 5, 59.90),
-    (2, 1, 2, 59.90),
+    (2, 2, 2, 59.90),
     (3, 5, 20, 3199.00),
-    (4, 1, 5, 100.00),
-    (5, 1, 3, 59.90),
-    (5, 3, 10, 5.90),
-    (5, 4, 7, 19.90),
-    (5, 2, 4, 59.90);
+    (4, 3, 5, 100.00),
+    (5, 6, 3, 3399.00),
+	(6, 7, 10, 1999.00),
+	(7, 8, 5, 1999.00),
+	(8, 9, 15, 3999.00),
+	(9, 10, 5, 4999.00),
+	(10, 3, 5, 100.00);
