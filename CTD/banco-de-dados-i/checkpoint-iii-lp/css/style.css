@@ -16,6 +16,15 @@ body {
     background-size: cover;
 }
 
+.download-button:hover {
+    background-color: #374797;
+}
+
+.spread-sheet-button:hover {
+    color: rgba(255, 255, 255, 0.85);
+    border-color:rgba(255, 255, 255, 0.85);
+    background-color:rgba(0, 0, 0, 0.15)
+}
 
 @media (max-width: 1023px) {
     main {
@@ -81,7 +90,6 @@ body {
         width: 70vw;
         background-color: #4458be;
         color: #fff;
-        box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
         border-radius: 10px;
         font-size: 1.3rem;
         font-weight: 400;
@@ -96,7 +104,6 @@ body {
         width: 70vw;
         border: solid 2px #fff;
         color: #fff;
-        box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
         border-radius: 10px;
         font-size: 1.3rem;
         font-weight: 400;
@@ -176,9 +183,8 @@ body {
         width: 15vw;
         background-color: #4458be;
         color: #fff;
-        box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
         border-radius: 5px;
-        font-size: 1.3vw;
+        font-size: 1.2vw;
         font-weight: 400;
     }
     
@@ -191,9 +197,8 @@ body {
         width: 15vw;
         border: solid 2px #fff;
         color: #fff;
-        box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
         border-radius: 5px;
-        font-size: 1.3vw;
+        font-size: 1.2vw;
         font-weight: 400;
     }
     
