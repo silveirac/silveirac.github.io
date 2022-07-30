@@ -1,0 +1,26 @@
+//1
+-- A partir dos dados dos clientes, eu desejo os 10 primeiros registros da seguinte forma:
+-- - Primeiro e último nome concatenados
+-- - Status (ativo/inativo)
+-- - Data de entrada(criação) dentro do sistema
+-- - ID da loja que o mesmo está vinculado
+-- - Endereço 1
+-- - Endereço 2
+-- - Telefone
+-- - CEP
+-- - Nome da cidade
+-- - Nome do país
+
+//2
+
+-- Eu desejo saber os filmes alugados pela LINDA WILLIAMS, organizados em ordem de
+-- data de aluguel, da seguinte forma:
+-- - ID do cliente
+-- - Primeiro e último nome do cliente concatenados
+-- - Nome do filme alugado
+-- - Descrição do filme alugado
+-- - Idioma
+-- - Classificação
+-- - Data de aluguel formatados no padrão (DD/MM/YYYY)
+-- - Data de devolução formatados no padrão (DD/MM/YYYY)
+-- - Primeiro e último nome do funcionário que realizou a locação
