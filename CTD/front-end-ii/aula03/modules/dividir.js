@@ -1,3 +1,5 @@
+/* Cauê Silveira | CTD (Part-time) | Turma 1 */
+
 export default function dividir() {
 
     let num1 = prompt("Insira o numerador:\n");
@@ -6,7 +8,7 @@ export default function dividir() {
         
         let num2 = prompt("Insira o denominador:\n");
 
-        if (!isNaN(num1)) {
+        if (!isNaN(num2)) {
             
             if (num2 == 0) {
 

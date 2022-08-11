@@ -1,0 +1,57 @@
+/* Cauê Silveira | CTD (Part-time) | Turma 1 */
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Helvetica;
+    font-weight: 700;
+    height: 100vh;
+    background-color: #333;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    color: #888;    
+}
+
+p {
+    display: flex;
+    justify-content: center;
+    color: #888;
+}
+
+.buttons-container {
+    margin-top: 100px;
+    width: 80vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    column-gap: 25px;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #888;
+    font-size: 6rem;
+}
+
+.autoria {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    bottom: 25px;
+    font-size: 0.75rem;
+}

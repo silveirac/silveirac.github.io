@@ -1,3 +1,5 @@
+/* Cauê Silveira | CTD (Part-time) | Turma 1 */
+
 import somar from "./modules/somar.js";
 import subtrair from "./modules/subtrair.js";
 import multiplicar from "./modules/multiplicar.js";
