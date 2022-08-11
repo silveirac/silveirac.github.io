@@ -1,3 +1,9 @@
+// Integrantes
+// Cairo Ramon
+// Cauê Silveira
+// Laura Freitas
+// Felipe Teles
+
 export default function themeChange() {
 
     document.querySelector("body").classList.toggle("body-dark");
@@ -5,13 +11,4 @@ export default function themeChange() {
     document.querySelectorAll(".item").forEach(element => element.classList.toggle("item-dark"));
     document.querySelectorAll(".item").forEach(element => element.classList.toggle("item-font-color-dark"));
 
-
-
-    // let item =  document.querySelectorAll(".item");
-
-
-    // document.querySelector("body").classList.toggle("body-dark");
-    // document.querySelector("body").classList.toggle("body-dark");
-    // document.querySelector("body").classList.toggle("body-dark");
-    // document.querySelector("body").classList.toggle("body-dark");
 };
