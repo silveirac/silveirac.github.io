@@ -5,30 +5,19 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles/styles.css">
-  <link rel="stylesheet" href="styles/switch.css">
+  <link rel="stylesheet" href="styles.css">
+  <script src="./app.js" type="module" defer></script>
   <title>Aula 5 - Modificar elementos com JS </title>
-  <script src="./app.js"></script>
 </head>
 
 <body class="dark">
 
-
-
-  <div class="container">
-    <h1>A família dos felinos</h1>
-
-    <!-- Exemplo de switch, retiado do W3Schools 
-      -> https://www.w3schools.com/howto/howto_css_switch.asp -->
-   
-    <label class="switch">
-      <!-- OnChnaged -> Fica obervando 'mudanças' no comportamento do input -->
-      <input id="toggleSwitch" type="checkbox">
-      <span class="slider"></span>
-    </label>
-  </div>
+  <h1>A família dos felinos</h1>
+  <button class="theme-toggler" id="themeToggler">Tema</button>
 
   <div class="container" id="card-container">
   </div>
+  
 </body>
+
 </html>
