@@ -17,10 +17,13 @@ h1 {
   color: grey;
 }
 
-.theme-toggler {
+.button-container {
   position: absolute;
   top: 20px;
   right: 30px;
+}
+
+.toggler {
   color: grey;
   background-color: transparent;
   padding: 5px;
@@ -28,7 +31,7 @@ h1 {
   cursor: pointer;
 }
 
-.theme-toggler:hover {
+.toggler:hover {
   background: grey;
   color: white;
 }
