@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
     <link rel="stylesheet" href="./css/style.css">
-    <script src="./js/script.js"></script>
+    <script src="./js/script.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Oswald:wght@400;700&display=swap" rel="stylesheet">
@@ -17,27 +17,23 @@
         <div class="calculator-container">
             <div class="calc-title">
                 <h2>Simple Calculator</h2>
-                <h3>by Cauê Silveira</h3>
-                <a class="github" href="https://github.com/silveirac/silveirac.github.io/tree/main/CTD/front-end-i/checkpoint-1">
-                    <img class="github-img" src="./img/github.svg" alt="Go to github repository">
-                </a>
             </div>
             <div>
                 <p class="expression-screen" id="expression-screen"></p>
-                <p class="num-screen" id="num-screen"></p>
+                <p class="num-screen" id="num-screen">0</p>
             </div>
             <table class="grid-master">
                 <tr>
                     <td><button id="clear-button" onclick="clean()">C</button></td>
                     <td><button id="delete-button">Del</button></td>
-                    <td><button>/</button></td>
-                    <td><button>X</button></td>
+                    <td><button onclick="operation('*')">/</button></td>
+                    <td><button onclick="operation('/')">X</button></td>
                 </tr>
                 <tr>
                     <td><button onclick="insert('7')">7</button></td>
                     <td><button onclick="insert('8')">8</button></td>
                     <td><button onclick="insert('9')">9</button></td>
-                    <td><button>-</button></td>
+                    <td><button onclick="operation('-')">-</button></td>
                 </tr>
                 <tr>
                     <td><button onclick="insert('4')">4</button></td>
@@ -49,11 +45,11 @@
                     <td><button onclick="insert('1')">1</button></td>
                     <td><button onclick="insert('2')">2</button></td>
                     <td><button onclick="insert('3')">3</button></td>
-                    <td rowspan="2"><button onclick="result('=')">=</button></td>
+                    <td rowspan="2"><button onclick="operation('=')">=</button></td>
                 </tr>
                 <tr>
                     <td colspan="2"><button onclick="insert('0')">0</button></td>
-                    <td><button>.</button></td>
+                    <td><button onclick="insertDot()">.</button></td>
                 </tr>
             </table>
         </div>
