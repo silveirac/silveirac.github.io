@@ -1,7 +1,6 @@
 // Declaração de variáveis
 let numScreen = document.querySelector("#num-screen");
-let expScreen = document.querySelector("#expression-screen")
-let toggleResult = false;
+let expScreen = document.querySelector("#expression-screen");
 
 console.log(expScreen.innerText);
 
