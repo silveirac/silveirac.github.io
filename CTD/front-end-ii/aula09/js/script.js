@@ -1,11 +1,11 @@
-//Capturando e alterando o valor de #num-screen
+// Declaração de variáveis
 let numScreen = document.querySelector("#num-screen");
 let expScreen = document.querySelector("#expression-screen")
 let toggleResult = false;
 
 console.log(expScreen.innerText);
 
-//função para inserir valores na #num-screen
+// Função para inserir valores na #num-screen
 function insert (num) {
     if (numScreen.innerText.length == 22) {
         alert("Número muito longo!")
@@ -18,12 +18,14 @@ function insert (num) {
     }
 }
 
+// Função para inserir ponto na #num-screen
 function insertDot() {
     if (numScreen.innerText.indexOf(".") == -1) {
         numScreen.innerText += ".";   
     }
 }
 
+// Função para limpar as telas (num-screen e expression-screen)
 function clean() {
     if (numScreen.innerText == null || numScreen.innerText == "0") {
         expScreen.innerText = "";
@@ -33,6 +35,7 @@ function clean() {
     }
 }
 
+// // Função para inserir operação
 function operation(operator) {
     let arrayExp = expScreen.innerText.split("");
     let result;
@@ -63,6 +66,7 @@ function operation(operator) {
     longExpression();
 }
 
+// Função para apagar último digito da #num-screen
 function del() {
     if (numScreen.innerText !== "0") {
         let num = numScreen.innerText.split("");
@@ -75,6 +79,7 @@ function del() {
     }
 }
 
+// Função verificar tamanho de caracteres na #exp-screen
 function longExpression() {
     if (expScreen.innerText.length >= 50) {
         alert("Expressão muito longa!");
@@ -82,6 +87,7 @@ function longExpression() {
     }
 }
 
+// Listeners de eventos de teclado
 window.addEventListener("keydown", event => {
     console.log(event.key);
     switch (event.key) {
