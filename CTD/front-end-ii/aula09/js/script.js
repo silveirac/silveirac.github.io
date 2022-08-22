@@ -89,7 +89,6 @@ function longExpression() {
 
 // Listeners de eventos de teclado
 window.addEventListener("keydown", event => {
-    console.log(event.key);
     switch (event.key) {
         default:
             break;
