@@ -7,7 +7,9 @@
 }
 
 body {
-    background-color: rgba(220, 220, 220, 1);
+    background-color: #555;
+    display: flex;
+    justify-content: center;
 }
 
 .calculator-container {
@@ -16,6 +18,7 @@ body {
     justify-content: space-between;
     background-color: rgba(50, 50 ,50, 1);
     width: 100vw;
+    max-width: 800px;
     height: 100vh;
     padding: 10px;
 }
@@ -29,16 +32,6 @@ body {
     font-family: 'Caveat', Arial, Helvetica, sans-serif;
 }
 
-.github {
-    position: absolute;
-    top: 20px;
-    right: 30px;
-}
-
-.github-img {
-    height: 40px;
-}
-
 .expression-screen {
     display: flex;
     justify-content: end;
@@ -48,8 +41,7 @@ body {
     margin: 0 5px;
     padding: 10px 20px;
     font-size: 1.15rem;
-    color: rgba(15, 15 ,15, 1)
-    overflow: hidden;
+    color: rgba(15, 15 ,15, 1);
 }
 
 .num-screen {

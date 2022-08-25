@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="./app.js" defer></script>
+  <title>Aula 08 - Eventos</title>
+</head>
+
+<body class="dark">
+  
+  <h1>Aula 08 - Eventos</h1>
+  
+  <div class="form-container">
+    <form action="" id="register-form">
+      <div class="h2-container">
+        <h2 id="form-title">Formulário de Cadastro!</h2>
+        <p>Passe o mouse para se surpreender!</p>
+      </div>
+      <label for="name">Nome</label>
+      <input type="text" name="name" id="name" required>
+      <label for="surname">Sobrenome</label>
+      <input type="text" name="surname" id="surname">
+      <label for="email">Email</label>
+      <input type="email" name="email" id="email"required>
+      <label for="tel">Telefone</label>
+      <input type="tel" name="tel" id="tel">
+      <div class="form-button-container">
+        <button type="submit" id="submit-button">Enviar</button>
+        <button type="reset" id="reset-button">Limpar</button>
+      </div>
+    </form>
+    <div id="key-logger-screen">
+      <p id="key-logger-text-area">
+      </p>
+      <div id="key-logger-counter-container">
+        <span>Count:</span>
+        <span id="key-logger-counter"></span>
+      </div>
+    </div>
+  </div>
+  
+</body>
+
+</html>
