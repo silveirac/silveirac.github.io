@@ -1,0 +1,242 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Poppins', Helvetica, Arial, sans-serif;
+}
+
+html {
+    height: 100vh;
+}
+
+body {
+    background: url(../assets/index-background.webp) no-repeat center;
+    background-size: cover;
+}
+
+.download-button:hover {
+    background-color: #374797;
+}
+
+.spread-sheet-button:hover {
+    color: rgba(255, 255, 255, 0.85);
+    border-color:rgba(255, 255, 255, 0.85);
+    background-color:rgba(0, 0, 0, 0.15)
+}
+
+@media (max-width: 1023px) {
+    main {
+        display: flex;
+        align-items: center;
+        padding: 0 5%;
+        height: 90vh;
+    }
+    
+    .main-container {
+        display: flex;
+        flex-direction: column;    
+        justify-content: center;
+        align-items: center;
+        row-gap: 5.5vh;
+    }
+
+    .github-cto-container {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        column-gap: 15px;
+        max-width: 90vw;
+        color: #fff;
+        top: 3vh;
+        right: 5vw;
+    }
+
+    .github-cto-arrow {
+        height: 2.5vh;
+    }
+
+    .github-cto-msg-link {
+        font-weight: 700;
+        color: #fff;
+    }
+
+    .github-cto-msg-link:visited {
+        color: #fff;
+    }
+    
+    .main-logo {
+        width: 80%;
+        min-width: 300px !important;
+    }
+    
+    .buttons-container {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 5vw;
+        width: 100%;
+        
+    }
+    
+    .download-button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100px;
+        max-width: 250px;
+        width: 70vw;
+        background-color: #4458be;
+        color: #fff;
+        border-radius: 10px;
+        font-size: 1.3rem;
+        font-weight: 400;
+    }
+    
+    .spread-sheet-button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100px;
+        max-width: 250px;
+        width: 70vw;
+        border: solid 2px #fff;
+        color: #fff;
+        border-radius: 10px;
+        font-size: 1.3rem;
+        font-weight: 400;
+    }
+
+    .mysql-logo {
+        position: absolute;
+        bottom: 30px;
+        right: calc(50vw - (85px));
+        max-width: 170px;
+        width: 40vw;
+    }
+}
+
+@media (min-width: 1024px) {
+    main {
+        display: flex;
+        align-items: center;
+        padding: 0 200px;
+        height: 90vh;
+    }
+    
+    .main-container {
+        display: flex;
+        flex-direction: column;    
+        justify-content: center;
+        row-gap: 5.5vh;
+    }
+    
+    .github-cto-container {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        column-gap: 1.2vw;
+        max-width: 90vw;
+        color: #fff;
+        top: 3vh;
+        right: 3vw;
+    }
+
+    .github-cto-arrow {
+        height: 2.5vh;
+    }
+
+    .github-cto-msg {
+        font-size: 2.2vh;
+    }
+
+    .github-cto-msg-link {
+        font-weight: 700;
+        color: #fff;
+    }
+
+    .github-cto-msg-link:visited {
+        color: #fff;
+    }
+
+    .main-logo {
+        width: 80%;
+        min-width: 390px !important;
+    }
+    
+    .buttons-container {
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 3vw;
+        width: 100%;
+        
+    }
+    
+    .download-button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 8vh;
+        max-width: 300px;
+        width: 15vw;
+        background-color: #4458be;
+        color: #fff;
+        border-radius: 5px;
+        font-size: 1.2vw;
+        font-weight: 400;
+    }
+    
+    .spread-sheet-button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 8vh;
+        max-width: 300px;
+        width: 15vw;
+        border: solid 2px #fff;
+        color: #fff;
+        border-radius: 5px;
+        font-size: 1.2vw;
+        font-weight: 400;
+    }
+    
+    .mysql-logo {
+        position: absolute;
+        right: 70px;
+        bottom: 50px;
+        height: 70px;
+    }
+}
+
+@media (min-width: 1921px) {
+    .main-logo {
+        width: 150% !important;
+        max-width: 1500px;
+    }
+
+    .download-button, .spread-sheet-button {
+        max-width: 680px !important;
+    }
+
+    .mysql-logo {
+        position: absolute;
+        right: 3.65vw;
+        bottom: 4.6vh;
+        height: 6.5vh;
+    }
+}
+
+@media (max-height: 510px) {
+    .footer {
+        display: none;
+    }
+
+    .mysql-logo {
+        position: absolute;
+        right: 1vh !important;
+        bottom: 1vh !important;
+        height: 13vh;
+    }
+}   

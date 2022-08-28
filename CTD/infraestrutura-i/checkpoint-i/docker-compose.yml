@@ -1,0 +1,19 @@
+version: "3.8"
+services:
+    website1: 
+        image: caueasilveira/silveirac-cp1-infra:latest
+        ports:
+            - "8080:80"
+        networks:
+            - public
+    website2:
+        image: caueasilveira/silveirac-cp1-infra-pt2:latest
+        ports:
+            - "8081:80"
+        networks:
+            - public
+networks:
+    internal:
+            internal: false
+    public:
+            internal: false

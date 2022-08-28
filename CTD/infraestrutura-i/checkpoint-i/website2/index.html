@@ -1,0 +1,184 @@
+<!-- 
+Front-end I - Checkpoint 2
+
+Integrantes:
+  Cauê Silveira
+  Claudio Lague
+  Matheus Abreu
+  Rafael Varela 
+ -->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Front-news | Home</title>
+  <!-- CSS Files -->
+  <link href="./css/style.css" rel="stylesheet">
+  <link href="./css/menu.css" rel="stylesheet">
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <a href="#" class="header-logo-container">
+        <img class="header-logo" src="./img/logo.svg" alt="logo front news">
+      </a>
+      <nav class="header-nav-menu">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#news-wrapper">Artigos</a></li>
+          <li><a href="#videos-wrapper">Vídeos</a></li>
+          <li><a href="./view/sobre-nos.html">Sobre nós</a></li>
+          <li>
+            <a href="./view/login.html" class="header-login-a">Login</a>
+          </li>
+        </ul>
+      </nav>
+        <input type="checkbox" class="hamburger-menu" id="hamburger-menu">    
+        <label for="hamburger-menu" id="hamburger-menu-label">
+          <div class="bar bar-top"></div>
+          <div class="bar bar-middle"></div>
+          <div class="bar bar-bottom"></div>          
+        </label>
+        <div class="dark-filter"></div>
+      <nav class="header-mobile-menu">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#news-wrapper">Artigos</a></li>
+          <li><a href="#videos-wrapper">Vídeos</a></li>
+          <li><a href="./view/sobre-nos.html">Sobre nós</a></li>
+        </ul>
+        <form action="#" class="login-form">
+          <div class="login-input">
+            <label for="login" id="login-label">Usuário</label>
+            <input type="text" class="input-field" id="login" name="login" placeholder="Seu usuário">
+          </div>
+          <div class="password-input">
+            <label for="password" id="password-label">Senha</label>
+            <input type="password" class="input-field" id="password" name="password" placeholder="Sua senha">
+          </div>
+          <button class="header-mobile-login-button" type="submit">Entrar</button>
+          <p class="register-text">Não é cadastrado? &nbsp<a href="#" class="register-anchor">Registre-se aqui.</a></p>
+        </form>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div class="headline-container">
+      <a href="./view/article.html" class="headline-anchor">
+        <img src="./img/headline.jpg" alt="" class="headline-img">
+        <div class="headline-text-container">
+          <h2 class="headline-title">Bombardeios continuam.</h2>
+          <p class="headline-sutitle">Novos bombardeios ocorreram na noite dessa quinta-feira (31) na capital ucraniana, Kiev.</p>
+        </div>
+      </a>
+    </div>
+    <section class="wrapper" id="news-wrapper">
+      <h3 class="section-title">Artigos</h3>
+      <div class="wrapper-filter">
+        <div class="wrapper-filter-input-container">
+          <label for="subject" class="filter-input-label">Filtrar por Assunto</label>
+          <select class="filter-input" id="subject" id="subject">
+            <option value="todos">Todos</option>
+            <option value="brasil">Brasil</option>
+            <option value="mundo">Mundo</option>
+            <option value="politica">Política</option>
+            <option value="esporte">Esporte</option>
+          </select>
+        </div>
+        <div class="wrapper-filter-input-container">
+          <label for="subject" class="filter-input-label">Ordenar</label>
+          <select class="filter-input" id="subject" id="subject">
+            <option value="date">Por data</option>
+            <option value="relevance">Por relevância</option>
+            <option value="visualizations">Por visualizações</option>
+          </select>
+        </div>
+      </div>
+      <div class="wrapper-item-container">
+        <a href="./view/news-1.html" class="news-anchor-1">
+          <img src="./img/news-1.jpg" alt="" class="wrapper-img">
+          <div class="wrapper-item-text-container">
+            <h3 class="title">Clássico carioca</h3>
+            <p class="subtitle">Flamengo e Fluminense se enfrentam nessa quarta-feira pelo campeonato brasileiro</p>
+          </div>
+        </a>
+      </div>
+      <div class="wrapper-item-container">
+        <a href="./view/news-2.html" class="news-anchor-2">
+          <img src="./img/news-2.jpg" alt="" class="wrapper-img">
+          <div class="wrapper-item-text-container">
+            <h3 class="title">Portugal na final</h3>
+            <p class="subtitle">Após derrotar a Holanda por 2 a 1, Portugal segue para as finais contra o vencedor do confronto desta quarta-feira</p>
+          </div>
+        </a>
+      </div>
+      <div class="wrapper-item-container">
+        <a href="./view/news-3.html" class="news-anchor-3">
+          <img src="./img/news-3.jpg" alt="" class="wrapper-img">
+          <div class="wrapper-item-text-container">
+            <h3 class="title">Não é só um joguinho</h3>
+            <p class="subtitle">Ententa como jogadores de FIFA estão construindo carreira no mundo dos E-sports</p>
+          </div>
+        </a>
+      </div>
+    </section>
+    <section class="wrapper" id="videos-wrapper">
+      <h3 class="section-title">Vídeos</h3>
+      <div class="wrapper-filter">
+        <div class="wrapper-filter-input-container">
+          <label for="subject" class="filter-input-label">Filtrar por Assunto</label>
+          <select class="filter-input" id="subject" id="subject">
+            <option value="todos">Todos</option>
+            <option value="brasil">Brasil</option>
+            <option value="mundo">Mundo</option>
+            <option value="politica">Política</option>
+            <option value="esporte">Esporte</option>
+          </select>
+        </div>
+        <div class="wrapper-filter-input-container">
+          <label for="subject" class="filter-input-label">Ordenar</label>
+          <select class="filter-input" id="subject" id="subject">
+            <option value="date">Por data</option>
+            <option value="relevance">Por relevância</option>
+            <option value="visualizations">Por visualizações</option>
+          </select>
+        </div>
+      </div>
+      <video src="./videos/placeholder.mp4" class="wrapper-video" controls="true"></video>
+      <video src="./videos/placeholder.mp4" class="wrapper-video" controls="true"></video>
+      <video src="./videos/placeholder.mp4" class="wrapper-video" controls="true"></video>
+    </section>
+  </main>
+  <footer id="footer">
+    <div class="footer-container">
+      <nav class="footer-menu">
+        <a href="#" class="footer-logo">
+          <img src="./img/footer-logo.svg" alt="front news">
+        </a>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#news-wrapper">Artigos</a></li>
+          <li><a href="#videos-wrapper">Vídeos</a></li>
+          <li><a href="./view/sobre-nos.html">Sobre nós</a></li>
+        </ul>
+      </nav>
+      <a class="github-footer" href="https://github.com/silveirac/silveirac.github.io/tree/main/CTD/front-end-i/checkpoint-2/">
+        <div>
+          <img class="github-footer-img" src="./img/github.svg" alt="Go to github repository">
+          <p class="github-footer-msg">Check out my code!</p>
+        </div>
+      </a>
+    </div>
+    <div class="footer-rights">
+      <p class="rights">Checkpoint 2 | Desenvolvido em abril de 2022</p>
+    </div>
+  </footer>
+</body>
+</html>

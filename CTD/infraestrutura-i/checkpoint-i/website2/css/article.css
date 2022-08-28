@@ -1,0 +1,86 @@
+/* 
+Front-end I - Checkpoint 2
+
+Integrantes:
+  Cauê Silveira
+  Claudio Lague
+  Matheus Abreu
+  Rafael Varela 
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+
+}
+
+.featured-img-container {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    background-color: rgba(25, 25, 25, 1);
+}
+
+.featured-img {
+    width: 100%;
+    max-width: 1024px;
+  }
+
+.article-body {
+    padding: 20px;
+
+}
+
+.embeded-article {
+    width: 100%;
+    height: 1300px;
+}
+
+.inner-article-body {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+
+.article-heading {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.article-title{
+    font-size: 3rem;
+    padding: 0 5%;
+}
+
+.article-subtitle {
+    font-style: italic;
+    padding: 0 5%;
+}
+
+.article-content {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+}
+
+@media (min-width: 1024px) {
+    .article-body {
+        width: 50%;
+        height: 750px;
+    }
+
+    .embeded-article {
+        width: 100%;
+        height: 750px;
+    }
+}
