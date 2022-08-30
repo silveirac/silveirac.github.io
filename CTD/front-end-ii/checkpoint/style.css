@@ -1,0 +1,127 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Inter', Helvetica, Arial, sans-serif;
+}
+
+body {
+    background-color: #F3F3F3;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    background-color: #BC0000;
+    padding: 5vw; 
+}
+
+.header-logo {
+    width: 10vw;
+    max-height: 45px;
+    max-width: 45px;
+}
+
+.header-search-bar {
+    width: 60vw;
+    display: flex;
+    align-items: center;
+}
+
+#header-search-bar-input {
+    height: 30px;
+    width: 100%;
+    padding: 0 10px;
+    border: none;
+    box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.15);
+    font-size: 0.75rem;
+}
+
+#header-search-bar-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 30px;
+    border: none;
+    background-color: #E9D100;
+}
+
+
+.header-hamburger-menu {
+    height: 30px;
+    width: 10vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    cursor: pointer;
+}
+
+.bar {
+    height: 3px;
+    width: 30px;
+    background-color: #E9D100;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner-container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0;
+    width: 100vw;
+}
+
+.banner-img {
+    width: 100%;
+}
+
+.banner-footer {   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 4vh;
+    background-color: #BC0000;
+    padding: 2.5vw; 
+    column-gap: 2.5vw;
+}
+
+.banner-footer img {
+    height: 5vw;
+}
+
+.banner-msg {
+    font-size: 0.75rem;
+    font-weight: 900;
+    color: #E9D100;
+}
+
+#card-container {
+    display: grid;
+    align-content: center;
+    justify-items: center;
+    margin: 50px 0;
+    padding: 2.5vw;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-auto-columns: 150px;
+    gap: 2px;   
+}
+
+.card {
+    padding: 10px;
+    height: 250px;
+    width: 100%;
+    max-width: 200px;
+    background-color: white; 
+    
+}
