@@ -18,11 +18,25 @@
                     <img src="./assets/star-button.svg" alt="Procurar">
                 </button>
             </div>
-            <div class="header-hamburger-menu">
-                <div class="bar bar-top"></div>
-                <div class="bar bar-middle"></div>
-                <div class="bar bar-bottom"></div>    
-            </div>
+            <a class="header-hamburger-menu" href="javascript:void(0)" onclick="slideMenu()">
+                <div class="bar" id="bar1"></div>
+                <div class="bar" id="bar2"></div>
+                <div class="bar" id="bar3"></div>    
+            </a>
+        </div>
+        <div id="header-menu" hidden="true">
+            <nav class="header-nav-menu">
+                <ul>
+                    <li>Vestuário Revolucionário</li>
+                    <li>Armas e Veículos Militares</li>
+                    <li class="tachado">Pets</li>
+                </ul>
+            <form id="login-form">
+                <input type="text" id="login-input" placeholder="login">
+                <input type="password" id="password-input" placeholder="senha">
+                <button type="button" id="login-button">ENTRAR</button>
+            </form>
+            </nav>
         </div>
     </header>
     <main>
@@ -33,7 +47,26 @@
                 <p class="banner-msg">Pacele tudo em até 12 meses de trabalho voluntário!</p>
             </div>
         </div>
-
+        <div id="greetings">
+            <h1>Bem-vindo, Lider Supremo!</h1>
+            <h3>Adicione novos produtos</h3>
+            <form class="product-register-form">
+                <label for="product-title">Título</label>
+                <input type="text" name="product-title" id="product-title">
+                <label for="product-price">Preço</label>
+                <input type="text" name="product-price" id="product-price">
+                <label for="product-payplan">Parcelamento</label>
+                <input type="text" name="product-payplan" id="product-payplan">
+                <label for="product-description">Descrição</label>
+                <input type="text" name="product-description" id="product-description">
+                <label for="product-imgurl">URL da imagem</label>
+                <input type="text" name="product-imgurl" id="product-imgurl">
+                <div class="form-button-container">
+                    <button type="reset" class="form-button">LIMPAR</button>
+                    <button type="button" class="form-button" id="save-button">SALVAR</button>
+                </div>
+            </form>
+        </div>
         <!-- <div class="form-container">
             <form action="">
                 <div>
