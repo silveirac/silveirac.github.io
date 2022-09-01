@@ -1,3 +1,5 @@
+alert("**ATENÇÃO!**\n\nPara habilitar o formulário de cadastro de produtos, faça o login utilizando:\n\nlogin: kimjongun\nsenha: 123456 ")
+
 // verificar login
 localStorage.setItem("login", '{"login" : "kimjongun", "password" : "123456"}');
 
@@ -63,7 +65,7 @@ function cardCreation (imgUrl, cardTitle, cardPrice, cardPayPlan, cardDescriptio
                             <h2 class="card-price">${cardPrice}</h2>
                             <p class="card-payplan">${cardPayPlan}</p>
                             <p class="card-description">${cardDescription}</p>
-                        </div>
+                            </div>
                     </div>
                 `;
 
@@ -97,7 +99,7 @@ function formStore () {
     stored.push(new Card(imgurl, title, price, payplan, description));
     localStorage.setItem("item", JSON.stringify(stored));
 
-    cardCreation(imgurl, title, price, payplan)
+    cardCreation(imgurl, title, price, payplan, description)
     document.getElementById("product-imgurl").value = "";
     document.getElementById("product-title").value = "";
     document.getElementById("product-price").value = "";

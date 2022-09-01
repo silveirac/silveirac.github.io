@@ -276,6 +276,7 @@ h1 {
 .card-description-price-container {
     display: flex;
     flex-direction: column;
+    overflow: auto;
     row-gap: 5px;
 }
 
