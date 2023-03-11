@@ -1,0 +1,17 @@
+-- CRIACAO DA TABELA DE ENDERECOS
+CREATE TABLE IF NOT EXISTS endereco
+    (id INT AUTO_INCREMENT PRIMARY KEY,
+    rua VARCHAR(100) NOT NULL,
+    numero VARCHAR(100),
+    cidade VARCHAR(100),
+    estado VARCHAR(100)
+);
+
+-- CRIAÇÃO DA TABELA DE FILIAIS
+
+CREATE TABLE IF NOT EXISTS filial
+    (id INT AUTO_INCREMENT PRIMARY KEY,
+    nome_filial VARCHAR(100),
+    cinco_estrelas BOOLEAN,
+    endereco_id INT
+);

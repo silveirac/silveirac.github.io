@@ -4,13 +4,15 @@ import java.time.LocalDate;
 
 public class Voo {
     //ATRIBUTOS
+    private String companhia;
     private LocalDate dataPartida;
     private LocalDate dataRetorno;
     private String origem;
     private String destino;
 
     //CONSTRUTOR
-    public Voo(LocalDate dataPartida, LocalDate dataRetorno, String origem, String destino) {
+    public Voo(String companhia, LocalDate dataPartida, LocalDate dataRetorno, String origem, String destino) {
+        this.companhia = companhia;
         this.dataPartida = dataPartida;
         this.dataRetorno = dataRetorno;
         this.origem = origem;
@@ -18,6 +20,14 @@ public class Voo {
     }
 
     //GETTERS & SETTERS
+    public String getCompanhia() {
+        return companhia;
+    }
+
+    public void setCompanhia(String companhia) {
+        this.companhia = companhia;
+    }
+
     public LocalDate getDataPartida() {
         return dataPartida;
     }

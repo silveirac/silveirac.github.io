@@ -1,0 +1,16 @@
+CREATE TABLE IF NOT EXISTS endereco (
+id INT AUTO_INCREMENT PRIMARY KEY,
+rua VARCHAR (36),
+numero VARCHAR (12),
+cidade VARCHAR (36),
+bairro VARCHAR (36)
+);
+
+CREATE TABLE IF NOT EXISTS paciente (
+id INT AUTO_INCREMENT PRIMARY KEY,
+nome VARCHAR (36),
+sobrenome VARCHAR (36),
+rg VARCHAR (36),
+data_nascimento TIMESTAMP,
+endereco_id int
+);
