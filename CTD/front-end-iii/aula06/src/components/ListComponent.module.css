@@ -1,0 +1,10 @@
+.listItem {
+    background-color: #eaeaea;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 4px #000;
+}
+
+h3 {
+    color: #3e3e3e;
+}
