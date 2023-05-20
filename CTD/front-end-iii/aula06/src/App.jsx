@@ -1,6 +1,13 @@
 import './App.css'
 import ListComponent from './components/ListComponent.jsx'
 
+/* GRUPO 4
+CAUÊ SILVEIRA
+RAFAEL VARELA
+PAULO BORGES
+OBS.: não consigo me lembrar do nome dos outros participantes.
+*/
+
 const cities = [
   {
     id: 1,
