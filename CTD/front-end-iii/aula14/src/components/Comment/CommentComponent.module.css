@@ -1,0 +1,14 @@
+* {
+    margin: 0;
+}
+.comment {
+    margin: 5px;
+    padding: 5px 15px;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    background-color: rgb(73, 73, 73);
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+

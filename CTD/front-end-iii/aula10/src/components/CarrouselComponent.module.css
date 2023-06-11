@@ -1,0 +1,6 @@
+.CarrouselContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    height: 400px;
+    width: 100vw;
+}

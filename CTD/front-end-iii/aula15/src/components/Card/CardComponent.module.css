@@ -1,0 +1,48 @@
+.cardContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: start;
+    padding: 10px;
+    position: relative;
+    background-color: gray;
+    border-radius: 5px;
+    width: 250px;
+    overflow: hidden;
+}
+
+img {
+    border-radius: 5px;
+    width: 100%;
+    height: 200px;
+}
+
+.categoryTag {
+    position: absolute;
+    min-width: 150px;
+    padding: 5px;
+    left: 0;
+    top: 20px;
+    border-radius: 0 5px 5px 0;
+    background-color: rgb(48, 100, 243);
+}
+
+.cardButtons {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    column-gap: 5px;
+}
+
+button {
+    width: 100px;
+    text-align: star;
+
+}
+.deleteButton {
+    background-color: rgb(196, 9, 9) !important;
+}
+
+.updateButton {
+    background-color: rgb(3, 143, 66) !important;
+}

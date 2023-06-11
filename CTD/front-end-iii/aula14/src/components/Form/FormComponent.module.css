@@ -1,0 +1,31 @@
+form {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    row-gap: 10px;
+}
+
+form > button {
+    align-self: flex-end;
+}
+
+.commentHeader {
+    display: flex;
+    column-gap: 10px;
+    justify-content: space-between;
+}
+
+.sendButton {
+    background-color: rgb(57, 92, 247);
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+    width: 120px;
+}
+
+.sendButton:hover {
+    background-color: rgba(57, 92, 247, 0.747);
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+}
+
+.sendButton:disabled {
+    background-color: lightgray;
+}

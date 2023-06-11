@@ -1,0 +1,26 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+form {
+    margin: 25px 0;
+    padding-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-items: space-evenly;
+    row-gap: 10px;
+    border-bottom: 1px solid gray;
+}
+
+form > input {
+    height: 30px;
+    padding: 0 5px;
+}
+
+button {
+    background-color: rgb(63, 63, 255) !important;
+    width: 120px;
+    align-self: flex-end;
+}

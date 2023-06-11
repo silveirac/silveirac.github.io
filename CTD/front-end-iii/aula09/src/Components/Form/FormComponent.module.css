@@ -1,0 +1,15 @@
+form {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+}
+
+form > div {
+    width: 40%;
+}
+
+form > div > input, select {
+    width: 100%;
+    padding: 10px 5px;
+}
